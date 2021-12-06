@@ -8,13 +8,14 @@
   }
 
  .fa {
-    box-sizing: content-box;
-    padding: 20px;
-    width: 30px;
-    height: 30px;
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+    height: 20px;
+    width: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 4px 2px;
     border-radius: 50%;
   }
   
