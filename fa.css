@@ -8,14 +8,14 @@
   }
 
  .fa {
-    font-size: 20px;
-    display: block;
-    padding: 15px;
-    height: 20px;
-    width: 20px;
-    text-align: center;
+    font-size: 30px;
+    display: flex;
+   justify-content: center;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 2px 2px;
     border-radius: 50%;
   }
   
@@ -49,24 +49,29 @@
   }
 
   .fa-github {
-    background: #000000;
+    background: #6cc644;
     color: white;
   }
 
   .fa-codepen {
-    background: #af417d;
+    background: #ae63e4;
     color: white;
   }
 
   .fa-glitch {
-    background: url(./assets/glitch_logo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #ffaabf;
     color: white;
+  }
+
+  .glitch-logo {
+    width: 30px;
+    height: 30px;
   }
 
   .fa-itch {
     background: url(./assets/itch_logo.png);
-    background-size: cover;
+    background-size: 40px 40px;
+    background-repeat: none;
+    background-position: 50% 50%;
     color: white;
   }
