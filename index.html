@@ -1,27 +1,30 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>Joe Gaffey</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="fa.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="description" content="Homepage of Joe Gaffey">
+    <meta name="twitter:widgets:theme" content="dark">
+    <meta name="theme" content="dark">
   </head>
-  <body>
-    <div class="particles"></div>
+  <body class="dark">
+    <div class="particles-container"></div>
     <div class="fa-container">
 <!--       <a href="https://twitter.com/joegaffey" class="fa fa-twitter"></a> -->
-      <a href="javascript:switchCard('.twitter-container')" class="fa fa-twitter"></a>
-      <a href="https://github.com/joegaffey/" class="fa fa-github"></a>
-      <a href="https://glitch.com/@joegaffey" class="fa fa-glitch">
-        <img class="glitch-logo" src="./assets/glitch.svg"/>
+      <a href="javascript:switchCard('.twitter-container')" class="fa fa-twitter" aria-label="Twitter"></a>
+      <a href="https://github.com/joegaffey/" class="fa fa-github" aria-label="Github"></a>
+      <a href="https://glitch.com/@joegaffey" class="fa fa-glitch"  aria-label="Glitch">
+        <img class="glitch-logo" src="./assets/glitch.svg" alt="glitch logo"/>
       </a>
 <!--       <a href="https://joegaffey.itch.io/" class="fa fa-itch"></a> -->
-      <a href="javascript:switchCard('.itch-container')" class="fa fa-itch"></a>
-      <a href="https://codepen.io/joegaffey" class="fa fa-codepen"></a>
-      <a href="https://www.youtube.com/c/JoeGaffey" class="fa fa-youtube"></a>
-      <a href="https://www.reddit.com/user/joegaffey" class="fa fa-reddit"></a>
-      <a href="https://www.linkedin.com/in/jgaffey/" class="fa fa-linkedin"></a>
+      <a href="javascript:switchCard('.itch-container')" class="fa fa-itch"  aria-label="Itch"></a>
+      <a href="https://codepen.io/joegaffey" class="fa fa-codepen"  aria-label="Codepen"></a>
+      <a href="https://www.youtube.com/c/JoeGaffey" class="fa fa-youtube" aria-label="Youtube"></a>
+<!--       <a href="https://www.reddit.com/user/joegaffey" class="fa fa-reddit" aria-label="Reddit"></a> -->
+      <a href="https://www.linkedin.com/in/jgaffey/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
     </div>  
    
     <div class="card-container">
@@ -33,7 +36,7 @@
       </div>
       <div class="card github-container">
 <!--         <iframe style="height:300px; width:300px;" src="https://github.com/joegaffey"></iframe> -->
-      </div>  
+      </div>
       <div class="card glitch-container">
       </div>  
       <div class="card itch-container">
@@ -45,7 +48,8 @@
       <div class="card linkedin-container">
       </div>  
     </div>
-    
-    <script src="./main.js"></script>
+    <script src="https://unpkg.com/css-paint-polyfill"></script>
+    <script src="./main.js" defer></script>
+<!--     <script src="./particles.js"></script> -->
   </body>
 </html>
