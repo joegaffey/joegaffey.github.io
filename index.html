@@ -8,18 +8,44 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   </head>
   <body>
+    <div class="particles"></div>
     <div class="fa-container">
-      <a href="https://twitter.com/joegaffey" class="fa fa-twitter"></a>
+<!--       <a href="https://twitter.com/joegaffey" class="fa fa-twitter"></a> -->
+      <a href="javascript:switchCard('.twitter-container')" class="fa fa-twitter"></a>
       <a href="https://github.com/joegaffey/" class="fa fa-github"></a>
-      <a href="https://glitch.com/@joegaffey" class="fa fa-glitch"></a>
-      <a href="https://joegaffey.itch.io/" class="fa fa-itch"></a>
+      <a href="https://glitch.com/@joegaffey" class="fa fa-glitch">
+        <img class="glitch-logo" src="./assets/glitch.svg"/>
+      </a>
+<!--       <a href="https://joegaffey.itch.io/" class="fa fa-itch"></a> -->
+      <a href="javascript:switchCard('.itch-container')" class="fa fa-itch"></a>
       <a href="https://codepen.io/joegaffey" class="fa fa-codepen"></a>
       <a href="https://www.youtube.com/c/JoeGaffey" class="fa fa-youtube"></a>
       <a href="https://www.reddit.com/user/joegaffey" class="fa fa-reddit"></a>
       <a href="https://www.linkedin.com/in/jgaffey/" class="fa fa-linkedin"></a>
+    </div>  
+   
+    <div class="card-container">
+      <div class="currentCard card twitter-container">
+        <a class="twitter-timeline" href="https://twitter.com/joegaffey?ref_src=twsrc%5Etfw">Tweets by joegaffey</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      </div>
+      <div class="card youtube-container">
+<!--         <iframe src="https://www.youtube.com/embed?listType=playlist&list=PLp_y3BffwOC-9qQ_8eVAhto3JJ1CuVaLY" width="480" height="400"></iframe>  -->
+      </div>
+      <div class="card github-container">
+<!--         <iframe style="height:300px; width:300px;" src="https://github.com/joegaffey"></iframe> -->
+      </div>  
+      <div class="card glitch-container">
+      </div>  
+      <div class="card itch-container">
+<!--         <iframe frameborder="0" src="https://itch.io/embed/1266121" width="552" height="167"><a href="https://joegaffey.itch.io/bugvsboxes">Bug vs. Boxes</a></iframe>
+        <iframe frameborder="0" src="https://itch.io/embed/196876" width="552" height="167"><a href="https://joegaffey.itch.io/galaxeroids">Galaxeroids</a></iframe> -->
+      </div>  
+      <div class="card reddit-container">
+      </div>  
+      <div class="card linkedin-container">
+      </div>  
     </div>
-    <div class="twitter-container">
-      <a class="twitter-timeline" href="https://twitter.com/joegaffey?ref_src=twsrc%5Etfw">Tweets by joegaffey</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-    </div>
+    
+    <script src="./main.js"></script>
   </body>
 </html>
