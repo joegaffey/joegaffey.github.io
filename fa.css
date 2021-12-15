@@ -59,7 +59,11 @@
   }
 
   .fa-glitch {
-    background: #ffaabf;
+    background-color: #ffaabf;
+    background-image: url(./assets/glitch.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     color: white;
   }
 
@@ -71,7 +75,25 @@
   .fa-itch {
     background: url(./assets/itch_logo.png);
     background-size: 40px 40px;
-    background-repeat: none;
+/*     background-repeat: no-repeat; */
     background-position: 50% 50%;
+    color: white;
+  }
+
+  .fa-instructables {
+    background-color: #ccc;
+    background-image: url(./assets/instructables_logo.png);
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: white;
+  }
+
+ .fa-joegaffey {
+    background-color: white;
+    background-image: url(./assets/head.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
     color: white;
   }
