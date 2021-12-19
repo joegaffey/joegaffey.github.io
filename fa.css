@@ -1,99 +1,110 @@
-  .fa-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    flex-flow: row wrap;
-    justify-content: center; 
-    padding: 20px;
-  }
+.fa-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  flex-flow: row wrap;
+  justify-content: center; 
+  padding: 20px;
+}
 
- .fa {
-    font-size: 30px;
-    display: flex;
-   justify-content: center;
-    padding: 10px;
-    height: 30px;
-    width: 30px;
-    text-decoration: none;
-    margin: 2px 4px;
-    border-radius: 50%;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-rss {
-    background: #ff6600;
-    color: white;
-  }
+.fa {
+  font-size: 30px;
+  display: flex;
+ justify-content: center;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+  margin: 2px 4px;
+  border-radius: 50%;
+}
 
-  .fa-reddit {
-    background: #ff5700;
-    color: white;
-  }
+.fa:hover {
+  opacity: 0.7;
+}
 
-  .fa-github {
-    background: #6cc644;
-    color: white;
-  }
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 
-  .fa-codepen {
-    background: #ae63e4;
-    color: white;
-  }
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 
-  .fa-glitch {
-    background-color: #ffaabf;
-    background-image: url(./assets/glitch.svg);
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    color: white;
-  }
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
 
-  .glitch-logo {
-    width: 30px;
-    height: 30px;
-  }
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
 
-  .fa-itch {
-    background: url(./assets/itch_logo.png);
-    background-size: 40px 40px;
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-github {
+  background: #6cc644;
+  color: white;
+}
+
+.fa-codepen {
+  background: #ae63e4;
+  color: white;
+}
+
+.fa-glitch {
+  background-color: #ffaabf;
+  background-image: url(./assets/glitch.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: white;
+}
+
+.glitch-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.fa-itch {
+  background: url(./assets/itch_logo.png);
+  background-size: 40px 40px;
 /*     background-repeat: no-repeat; */
-    background-position: 50% 50%;
-    color: white;
-  }
+  background-position: 50% 50%;
+  color: white;
+}
 
-  .fa-instructables {
-    background-color: #ccc;
-    background-image: url(./assets/instructables_logo.png);
-    background-size: 80px 80px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    color: white;
-  }
+.fa-instructables {
+  background-color: #ccc;
+  background-image: url(./assets/instructables_logo.png);
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: white;
+}
 
- .fa-joegaffey {
-    background-color: white;
-    background-image: url(./assets/head.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 75%;
-    color: white;
-  }
+.fa-sketchfab {
+  background-color: white;
+  background-image: url(./assets/sketchfab-logo.png);
+  background-size: cover;
+  ackground-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: white;
+}
+      
+
+.fa-joegaffey {
+  background-color: white;
+  background-image: url(./assets/head.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+  color: white;
+}
