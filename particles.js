@@ -6,7 +6,7 @@ class Particles {
 
   setupParticles(size) {
     this.particlesArray = [];
-    for(let i = 0; i < 50; i++) {
+    for(let i = 0; i < 150; i++) {
       const part = {};
       this.setupParticle(part, size);
       this.particlesArray.push(part);
@@ -16,8 +16,8 @@ class Particles {
   setupParticle(part, size) {
     part.x = Math.random() * size.width;
     part.y = Math.random() * size.height;
-    part.color = '#' + Math.floor(Math.random()*16777215).toString(16);
-    part.size = 5 + Math.random() * 10;
+    part.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    part.size = 5 + Math.random() * 20;
     // Flicker in animation - reverting to static for now
     // part.speed =  0.1 + Math.random();
     // part.direction = Math.random() * 90;
