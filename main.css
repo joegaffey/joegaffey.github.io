@@ -1,6 +1,6 @@
 .dark {
-  --bgColor: #212121;
-  --partOpacity: 0.2;
+  --bgColor: #050505;
+  --partOpacity: 0.08;
   --color: #bababa;
   --link-color: DarkSeaGreen;
   --card-color: rgba(10, 10, 10, 0.7);
@@ -11,7 +11,7 @@
   --partOpacity: 0.1;
   --color: #212121;
   --link-color: DarkCyan;
-  --card-color: rgba(240, 240, 240, 0.5);;
+  --card-color: rgba(240, 240, 240, 0.5);
 }
 
 html, body {
@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Verdana', sans-serif;
   background: var(--bgColor);
   color: var(--color);
 }
@@ -35,17 +35,26 @@ p {
   margin-top: 8px;
   margin-bottom: 0;
   text-align: left;
-  font-size: 1em;
+  font-size: 0.9em;
+}
+
+.posts > p {
+  font-size: 0.8em;
+  margin-bottom: 24px;
+}
+
+.posts {
+  margin-bottom: 36px;
 }
 
 h1 {
-  margin: 12px;
+  margin-top: 32px;
+  margin-bottom: 24px;
   text-align: center;
   font-size: 1.6em;
 }
 
 h2 {
-  margin: 0;
   margin-top: 24px;
   text-align: left;
   font-size: 1.4em;
@@ -55,12 +64,11 @@ h3 {
   margin: 0;
   margin-top: 18px;
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .subtitle {
-  margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   text-align: center;
   font-size: 0.8em;
 }
@@ -68,12 +76,13 @@ h3 {
 .welcome {
   display: flex;
   flex-direction: row; 
+  margin-bottom: 20px;
 }
 
 .headshot {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 12px;
+  margin-left: 20px;
   width: 120px;
   min-width: 120px;
   height: 120px;
@@ -82,11 +91,6 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 75%;
-}
-
-.tags {
-  display: none;
-  font-size: 24px
 }
 
 .particles-container {
@@ -128,83 +132,25 @@ h3 {
   background-color: var(--card-color);
 }
 
-.currentCard {
-}
-
 .card-container {
   display: flex;
   flex-direction: column; 
   align-items: center;  
 }
 
-.jg-card {
-  display: block;
-  padding: 30px;
-  padding-top: 10px;
-}
-
-.twitter-card {
-  max-width: 520px;
-  height: auto;
-  width: 100%;
-}
-
-.itch-card {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;  
-  padding: 20px;
-} 
-
-.itch-card-main {
-  display: flex;
-  align-items: center;  
-  flex-direction: column; 
-  margin: 0;
-  width: 100%;
-}
-
-.itch-card-main > iframe {
-  width: 100%;
-  min-width: 240px;
-  padding: 20px;
-}
-
-.sketchfab-card {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;  
-  padding: 20px;
-}
-
-.sketchfab-card-main {
-  display: flex;
-  flex-direction: column; 
-  width: 100%;
-}
-
-.sketchfab-card-main > * {
-  display: flex;
-  flex-direction: column; 
-  height: auto;
-  margin-top: 20px;
-}
-
-.sketchfab-embed-wrapper > iframe {
-  height: auto;
-  min-height: 250px; 
-}
 
 .hidden {
   display: none;
 }
 
 @media screen and (max-width: 560px) {
+   
   .headshot {
     margin-top: 12px;
     margin-left: auto;
     margin-right: auto;
   }
+  
   .welcome {
     flex-direction: column;
   }
@@ -217,5 +163,9 @@ h3 {
   .card > * {
     margin: 20px;
     margin-top: 0;
+  }
+  
+  .card > h1 {
+    margin-top: 20px;
   }
 }
