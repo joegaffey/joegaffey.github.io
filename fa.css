@@ -28,6 +28,15 @@
   color: white;
 }
 
+.fa-mastodon {
+  background-color: #dddddd;
+  background-image: url(./assets/Mastodon_Logotype_Simple.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: white;
+}
+
 .fa-linkedin {
   background: #007bb5;
   color: white;
@@ -81,7 +90,7 @@
 }
 
 .fa-instructables {
-  background-color: #ccc;
+  background-color: #dddddd;
   background-image: url(./assets/instructables_logo.png);
   background-size: 80px 80px;
   background-repeat: no-repeat;
@@ -93,7 +102,6 @@
   background-color: white;
   background-image: url(./assets/sketchfab-logo.png);
   background-size: cover;
-  ackground-size: 40px 40px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   color: white;
