@@ -40,29 +40,30 @@ p {
 
 .posts > p {
   font-size: 0.8em;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .posts {
+  margin-top: 0;
   margin-bottom: 36px;
 }
 
 h1 {
-  margin-top: 32px;
+  margin-top: 52px;
   margin-bottom: 24px;
   text-align: center;
   font-size: 1.6em;
 }
 
 h2 {
-  margin-top: 24px;
+  margin-top: 12px;
   text-align: left;
   font-size: 1.4em;
 }
 
 h3 {
-  margin: 0;
-  margin-top: 18px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   text-align: left;
   font-size: 1em;
 }
@@ -76,7 +77,8 @@ h3 {
 .welcome {
   display: flex;
   flex-direction: row; 
-  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-bottom: 48px;  
 }
 
 .headshot {
@@ -138,6 +140,9 @@ h3 {
   align-items: center;  
 }
 
+.fa-container {
+  margin-bottom: 12px;
+}
 
 .hidden {
   display: none;
@@ -146,13 +151,17 @@ h3 {
 @media screen and (max-width: 560px) {
    
   .headshot {
-    margin-top: 12px;
+    margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
   }
   
   .welcome {
     flex-direction: column;
+  }
+  
+  .fa-container {
+    margin-bottom: 14px;
   }
   
   .card {
