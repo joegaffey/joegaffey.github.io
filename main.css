@@ -35,17 +35,7 @@ p {
   margin-top: 8px;
   margin-bottom: 0;
   text-align: left;
-  font-size: 0.9em;
-}
-
-.posts > p {
-  font-size: 0.8em;
-  margin-bottom: 32px;
-}
-
-.posts {
-  margin-top: 0;
-  margin-bottom: 36px;
+  font-size: 1em;
 }
 
 h1 {
@@ -67,6 +57,26 @@ h3 {
   text-align: left;
   font-size: 1em;
 }
+
+.posts > p {
+  font-size: 0.8em;
+  margin-bottom: 0;
+}
+
+
+.posts > a {
+  font-size: 0.8em;
+}
+
+.posts {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.posts > h3 {
+  margin-top: 24px;
+}
+
 
 .subtitle {
   margin-bottom: 18px;
@@ -131,6 +141,7 @@ h3 {
   width: 80%;
   max-width: 750px;
   border-radius: 18px;
+  padding: 18px;
   background-color: var(--card-color);
 }
 
