@@ -10,12 +10,12 @@
     <link>https://gist.github.com/joegaffey/46a44c45399afb5f89efef9d1bd5f247</link>
     <description>
     <p>Here's the code snippet I use to render my RSS feed into this page avoiding a build step or content duplication.</p> 
-    <p><b>Note:</b> Requires JS to be enabled.</p>
+    <p><b>Note:</b> Requires JavaScript to be enabled.</p>
     </description>
   </item>
   <item>
     <title>Now available via RSS [Info]</title>
-    <link>https://joegaffey-web.glitch.me/feed.rss</link>
+    <link>./feed.rss</link>
     <description>
       <p>Given the surge in popularity of decentralized social media and the fediverse I thought it was high time to add an RSS feed to this site.</p>
       <p>Click the link below or the RSS icon above to keep up with the latest updates.</p>
