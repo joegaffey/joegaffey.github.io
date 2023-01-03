@@ -37,7 +37,7 @@ p {
   margin-top: 8px;
   margin-bottom: 0;
   text-align: left;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 h1 {
@@ -92,7 +92,8 @@ h3 {
 .welcome {
   display: flex;
   flex-direction: row; 
-  margin-bottom: 18px;  
+  margin-top: 8px;
+  margin-bottom: 18px;
 }
 
 .headshot {
