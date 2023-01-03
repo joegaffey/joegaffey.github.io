@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Joe's feed</title>
+  <link>https://www.joegaffey.com</link>
+  <description>Some random stuff I did.</description>
+  <item>
+    <title>Now available via RSS [Info]</title>
+    <link>https://joegaffey-web.glitch.me/feed.rss</link>
+    <description>
+      <p>Given the surge in popularity of decentralized social media and the fediverse I thought it was high time to add an RSS feed to this site.</p>
+      <p>Click the link below or the RSS icon above to keep up with the latest updates.</p>
+    </description>
+  </item>
+  <item>
+    <title>MUlti-SCreen Layout EDitor [App]</title>
+    <link>https://muscled.glitch.me/</link>
+    <description>New web app provides a 3D workspace to layout and assess the design of your multi-screen envrionment. Matched triples as used in sim racing to start with. Check it out.</description>
+  </item>
+  <item>
+    <title>FPS Tester [App]</title>
+    <link>https://web-fps.glitch.me/</link>
+    <description>Very quick web app (made it while cooking rice) to display browser frame rate.</description>
+  </item>
+  <item>
+    <title>GameOff Wrap-up [Blog]</title>
+    <link>https://joegaffey.itch.io/bugvsboxes/devlog/320242/gameoff-wrap-up</link>
+    <description>Rather than crunch through the last couple of hours of the 2021 GameOff 'Bug' Jam and probably introduce Breaking Bugs (how did I not think of that as a name) I am writing a dev update as a form of retrospective over the month and to outline my plans for the game.</description>
+  </item>
+  <item>
+    <title>Power to the Beetle! [Blog]</title>
+    <link>https://joegaffey.itch.io/bugvsboxes/devlog/318799/power-to-the-beetle</link>
+    <description>With the the end of the GameOff 2021 Game Jam rapidly approaching I managed to squeeze in one final major feature - Power Ups!</description>
+  </item>
+  <item>
+    <title>Bug vs. Boxes: in-game capture test [Video]</title>
+    <link>https://www.youtube.com/watch?v=pXhPvWurK6A</link>
+    <description>With the the end of the GameOff 2021 Game Jam rapidly approaching I managed to squeeze in one final major feature - Power Ups!</description>
+  </item>
+  <item>
+    <title>Is that a record? [Blog]</title>
+    <link>https://joegaffey.itch.io/bugvsboxes/devlog/317274/is-that-a-record</link>
+    <description>
+      <p>Coming to that stage of the development where polish, refinement and optimization are key.</p>
+      <p>Best thing for it then is ostentatious new features of questionable value but unquestionable (ahem) coolness. Yay!</p>
+    </description>
+  </item>
+  <item>
+    <title>Half-Way There! [Blog]</title>
+    <link>https://joegaffey.itch.io/bugvsboxes/devlog/315332/half-way-there</link>
+    <description>Half way through the GitHub GameOff game jam and things are actually pretty under control this time around.</description>
+  </item>
+  <item>
+    <title>WebHID DualShock 4 [Video]</title>
+    <link>https://www.youtube.com/watch?v=XZfjJ_p9w6E</link>
+    <description>Quick clip of my WebHID DualShock 4 demo.</description>
+  </item>
+  <item>
+    <title>Shift-Shift-Forward Episode 1: Game On! [Podcast]</title>
+    <link>https://blog.glitch.com/episode/ssf-001-game-on</link>
+    <description>This episode is all about games — the ones we love to play, the ones that inspire our creativity, and the ones that make us want to create our own!</description>
+  </item>
+  <item>
+    <title>Biscuit Box Arcade Stick [Instructable]</title>
+    <link>https://www.instructables.com/Biscuit-Box-Arcade-Stick/</link>
+    <description>Got lots of empty biscuit boxes lying around over the holidays? Make use of one with this quick and fun project.</description>
+  </item>
+  <item>
+    <title>Modular Arcade Machine [Instructable]</title>
+    <link>https://www.instructables.com/Modular-Arcade-Machine/</link>
+    <description>
+    <p>My two boys and I wanted to build an arcade machine but we couldn't decide what type to build between a full stand-up cabinet, a bar-top or a fight-stick style console to plug into a TV.</p>
+    <p>It eventually occurred to us that we could build all three as a modular solution with modules that can be used individually or combined as desired.</p>
+    </description>
+  </item>
+  <item>
+    <title>Giant Retro Gamepad [Instructable]</title>
+    <link>https://www.instructables.com/Giant-Retro-Gamepad/</link>
+    <description>So we decided to make a giant working gamepad...</description>
+  </item>
+  <item>
+    <title>Codepen Retro Games Challenge [Blog]</title>
+    <link>https://codepen.io/joegaffey/post/retro-challenge</link>
+    <description>When the April Codepen Challenge turned up with a retro gaming theme I took the opportunity to combine some of my hobbies and get hands on with the latest web technologies by submitting an entry to each week of the challenge.</description>
+  </item> 
+  <!--<item>
+    <title></title>
+    <link></link>
+    <description></description>
+  </item> -->
+</channel>
+
+</rss>
