@@ -6,6 +6,14 @@
   <link>https://www.joegaffey.com</link>
   <description>Some random stuff I did.</description>
   <item>
+    <title>Render from RSS [Code]</title>
+    <link>https://gist.github.com/joegaffey/46a44c45399afb5f89efef9d1bd5f247</link>
+    <description>
+    <p>Here's the code snippet I use to render my RSS feed into this page avoiding a build step or content duplication.</p> 
+    <p><b>Note:</b> Requires JS to be enabled.</p>
+    </description>
+  </item>
+  <item>
     <title>Now available via RSS [Info]</title>
     <link>https://joegaffey-web.glitch.me/feed.rss</link>
     <description>
