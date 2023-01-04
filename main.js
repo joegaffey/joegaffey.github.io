@@ -2,73 +2,74 @@ let darkTheme = false;
 if(document.body.classList.contains('dark'))
   darkTheme = true;
 
-const RSS_URL = `./feed.rss`;
+const MASTODON_FEED_URL = 'https://mastodon.social/users/joegaffey.rss';
+const LOCAL_FEED_URL  = `./feed.rss`;
+const FEED_ERROR_TXT  = `Feed unavailble, check back later`;
 
-fetch(RSS_URL)
-  .then(response => response.text())
-  .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-  .then(data => {
-    const items = data.querySelectorAll("item");
-    let html = ``;
-    items.forEach(el => {
-      html += `
-          <h3>${el.querySelector("title").innerHTML}</h3>
-          <h4>${el.querySelector("pubDate").innerHTML}</h4>
-          <p>
-            ${el.querySelector("description").innerHTML}
-            <a href="${el.querySelector("link").innerHTML}">More..</a>
-          </p>          
-      `;
-    });
-    document.querySelector('.posts').insertAdjacentHTML("beforeend", html);
+const postsEl = document.querySelector('.posts');
+
+function showRSS(RSS_URL) {
+  fetch(RSS_URL)
+    .then((response) => {
+      if (response.ok) { return response.text(); }
+      else throw new Error('Something went wrong'); })
+    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+    .then(data => {
+      const items = data.querySelectorAll("item");
+      let html = ``;
+      items.forEach(el => {
+        const titleEl = el.querySelector("title");
+        const categoryEl = el.querySelector("category");
+        const linkEl = el.querySelector("link");
+
+        const pubDate = new Date(el.querySelector("pubDate").innerHTML).toDateString();
+        const title = titleEl ? titleEl.innerHTML : pubDate;
+        const link = linkEl.innerHTML;
+        const category = categoryEl ? categoryEl.innerHTML : 'Link';
+        const description = getDescription(el.querySelector("description").innerHTML);
+
+        html += `
+            <h3>${title} [<a href="${link}">${category}</a>]</h3>
+            ${(title == pubDate) ? `` : `<h4>${pubDate}</h4>`}
+            <p>${description}</p>          
+        `;
+      });
+      postsEl.innerHTML = html;
+    })
+    .catch(e => { postsEl.innerHTML = `<h3>${FEED_ERROR_TXT}</h3>`; });
+}
+
+function getDescription(textIn) {
+  let doc = new DOMParser().parseFromString(textIn, "text/html");
+  doc = new DOMParser().parseFromString(doc.documentElement.textContent, "text/html");
+  const aElList = doc.querySelectorAll("a");
+  
+  aElList.forEach(el => { // Shorten URLs
+    if(el.innerText.startsWith('https://'))
+      el.innerText = el.href.substring(8, 26) + '...';
   });
+  
+  const pEl = doc.querySelector("p");
+  return pEl ? `<p>${pEl.innerHTML}</p>` : textIn;
+}
+
+const stuffEl = document.querySelector('.stuffSelect');
+const socialEl = document.querySelector('.socialSelect');
+
+stuffEl.onclick = () => {
+  postsEl.innerHTML = '<h3>Loading...</h3>';
+  socialEl.classList.remove('h2Selected');
+  stuffEl.classList.add('h2Selected');
+  showRSS(LOCAL_FEED_URL);
+};
+
+socialEl.onclick = () => {
+  postsEl.innerHTML = '<h3>Loading...</h3>';
+  stuffEl.classList.remove('h2Selected');
+  socialEl.classList.add('h2Selected');
+  showRSS(MASTODON_FEED_URL);
+};
+  
+showRSS(LOCAL_FEED_URL);
 
 CSS.paintWorklet.addModule('./particles.js');
-
-
-// getRSS(MASTODON_RSS_URL);
-
-// function switchCard(selector) {
-//   document.querySelector('.currentCard').classList.add('hidden');
-//   document.querySelector('.currentCard').classList.remove('currentCard');
-//   document.querySelector(selector).classList.add('currentCard');
-//   document.querySelector(selector).classList.remove('hidden');
-//   // Lazy load cards with iframes for perf and to avoid layout issues
-//   if(selector === '.itch-card')
-//     updateItchCard();
-//   else if(selector === '.twitter-card')
-//     updateTwitterCard();
-//   else if(selector === '.sketchfab-card')
-//     updateSketchfabCard();
-// }
-
-// const MASTODON_RSS_URL = 'https://joegaffey-web.glitch.me/feed.rss';
-
-// function getDescription(html) {
-//   let doc = new DOMParser().parseFromString(html, "text/html");
-//   doc = new DOMParser().parseFromString(doc.documentElement.textContent, "text/html");
-//   const pEl = doc.querySelector("p");
-//   const linkEl = pEl.querySelector("a[rel~=noopener]");
-//   if(linkEl)
-//     linkEl.innerText = 'More...'        
-//   return `<p>${pEl.innerHTML}</p>`;
-// }
-
-// function getRSS(RSS_URL) {
-//   fetch(RSS_URL) 
-//     .then(response => response.text())
-//     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-//     .then(data => {
-//       const items = data.querySelectorAll("item");
-//       let html = `<div class="posts">`;
-//       items.forEach(el => {
-//         const rssDesc = getDescription(el.querySelector("description").innerHTML);
-//         const rssLink = el.querySelector("link").innerHTML;
-//         const rssDate = new Date(el.querySelector("pubDate").innerHTML).toLocaleString();
-
-//         html += `<h3><a href=${rssLink}>${rssDate}</a></h3>${rssDesc}`;
-//       });
-//       html += `</div>`;
-//       document.querySelector('.currentCard').insertAdjacentHTML("beforeend", html);
-//     });
-// }
