@@ -19,7 +19,7 @@
       <div class="card jg-card currentCard">
         <h1>Joe Gaffey</h1>
         <div class="subtitle">
-          PROJECTS / EXPERIMENTS / WEB / HARDWARE
+          CODE / WEB / APPS / HARDWARE
         </div>
         <div class="fa-container">
           <a href="./feed.rss" class="fa fa-rss" aria-label="RSS"></a>
@@ -37,11 +37,11 @@
         </div>
         <div class="welcome">
           <div class="blurb">
-            <h3>
+            <h2>
               Welcome! 
-            </h3>
+            </h2>
             <p>
-              This is where I collect together some of the random content that I've scattered across the web.
+              This page is where I gather together some of the random content that I've scattered across the web.
             </p>
             <p>
               Typically posts are related to Web Development, Hardware Hacking or some combination of these.
@@ -52,12 +52,22 @@
           </div>
           <div class="headshot"></div>
         </div>
-        <div class="posts"><h2>Stuff</h2></div>
-        <br/>
+        <h2>
+          <span class="stuffSelect h2Selected">Stuff</span>
+          <span class="socialSelect">Social</span>
+        </h2>
+        <div class="posts"><h3>Loading...</h3></div>
       </div>
     </div>
     
     <script src="https://unpkg.com/css-paint-polyfill"></script>
-    <script src="./main.js" defer></script>    
+    <script src="./main.js" defer></script>
+    
+<!--     <div id="content"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      document.getElementById('content').innerHTML =
+        marked.parse('# Marked in browser\n\nRendered by **marked**.');
+    </script> -->
   </body>
 </html>
