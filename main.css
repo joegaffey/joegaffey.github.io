@@ -168,7 +168,7 @@ h4 {
 }
 
 @media screen and (max-width: 560px) {
-   
+  
   .headshot {
     margin-top: 24px;
     margin-left: auto;
@@ -183,13 +183,16 @@ h4 {
     margin-bottom: 14px;
   }
   
+  .card-container {
+    margin: 20px;
+  }
+  
   .card {
     width: 100%;
     border-radius: 0;
   }
   
   .card > * {
-    margin: 20px;
     margin-top: 0;
   }
   
