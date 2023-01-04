@@ -12,9 +12,8 @@ fetch(RSS_URL)
     let html = ``;
     items.forEach(el => {
       html += `
-          <h3>
-            ${el.querySelector("title").innerHTML}
-          </h3>
+          <h3>${el.querySelector("title").innerHTML}</h3>
+          <h4>${el.querySelector("pubDate").innerHTML}</h4>
           <p>
             ${el.querySelector("description").innerHTML}
             <a href="${el.querySelector("link").innerHTML}">More..</a>
