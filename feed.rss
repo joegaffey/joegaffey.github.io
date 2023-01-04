@@ -5,6 +5,12 @@
   <title>Joe's feed</title>
   <link>https://www.joegaffey.com</link>
   <description>Some random stuff I did.</description>
+  <!--<item>
+    <title></title>
+    <pubDate></pubDate>
+    <link></link>
+    <description></description>
+  </item> -->
   <item>
     <title>Render from RSS [Code]</title>
     <pubDate>03 Jan 2023</pubDate>
@@ -106,12 +112,49 @@
     <pubDate>27 Apr 2018</pubDate>
     <link>https://codepen.io/joegaffey/post/retro-challenge</link>
     <description>When the April Codepen Challenge turned up with a retro gaming theme I took the opportunity to combine some of my hobbies and get hands on with the latest web technologies by submitting an entry to each week of the challenge.</description>
-  </item> 
-  <!--<item>
-    <title></title>
-    <link></link>
-    <description></description>
-  </item> -->
+  </item>
+  <item>
+    <title>Post Jam Drop [Blog]</title>
+    <pubDate>28 Dec 2017</pubDate>
+    <link>https://joegaffey.itch.io/galaxeroids/devlog/19377/post-jam-drop</link>
+    <description>Now that the game jam is over I have pushed some misc updates.</description>
+  </item>
+  <item>
+    <title>OMG PWA FTW! [Blog]</title>
+    <pubDate>11 Dec 2017</pubDate>
+    <link>https://joegaffey.itch.io/galaxeroids/devlog/17908/omg-pwa-ftw</link>
+    <description>Almost forgot to mention, Galaxeroids is implemented as a Progressive Web Application (PWA) using the manifold.js PWA Builder. </description>
+  </item>
+  <item>
+    <title>It's full of stars... [Blog]</title>
+    <pubDate>01 Dec 2017</pubDate>
+    <link>https://joegaffey.itch.io/galaxeroids/devlog/16761/its-full-of-stars</link>
+    <description>Probably my final upload before the GameOff deadline.</description>
+  </item>
+  <item>
+    <title>Boss Audio [Blog]</title>
+    <pubDate>29 Nov 2017</pubDate>
+    <link>https://joegaffey.itch.io/galaxeroids/devlog/16684/boss-audio</link>
+    <description>Two improvements in this last update are sound effects and the boss battle.</description>
+  </item>
+  <item>
+    <title>Control freak [Blog]</title>
+    <pubDate>26 Nov 2017</pubDate>
+    <link>https://joegaffey.itch.io/galaxeroids/devlog/16329/control-freak</link>
+    <description>So today's updates are all about the controls.</description>
+  </item>
+  <item>
+    <title>Release the Destructorb! [Blog]</title>
+    <pubDate>24 Nov 2017</pubDate>
+    <link>https://joegaffey.itch.io/galaxeroids/devlog/16235/release-the-destructorb-</link>
+    <description>Just uploaded a new version with a couple of small but nice updates.</description>
+  </item>
+  <item>
+    <title>Enter Galaxeroids! [Blog]</title>
+    <pubDate>23 Nov 2017</pubDate>
+    <link>https://joegaffey.itch.io/galaxeroids/devlog/16072/enter-galaxeroids</link>
+    <description>Galaxeroids is my entry to the 2017 GitHub Game Off. Its a retro arcade shooter homage to the late 70s classics that I'm basically using to recreate some fond childhood memories of the machines of that era with some newer game mechanics thrown in for extra fun.</description>
+  </item>
 </channel>
 
 </rss>
