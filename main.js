@@ -29,9 +29,11 @@ function showRSS(RSS_URL) {
         const description = getDescription(el.querySelector("description").innerHTML);
 
         html += `
+          <article>
             <h3>${title} [<a href="${link}">${category}</a>]</h3>
             ${(title == pubDate) ? `` : `<h4>${pubDate}</h4>`}
             <p>${description}</p>          
+          </article>
         `;
       });
       postsEl.innerHTML = html;
@@ -53,6 +55,8 @@ function getDescription(textIn) {
   return pEl ? `<p>${pEl.innerHTML}</p>` : textIn;
 }
 
+showRSS(LOCAL_FEED_URL);
+
 const stuffEl = document.querySelector('.stuffSelect');
 const socialEl = document.querySelector('.socialSelect');
 
@@ -70,6 +74,4 @@ socialEl.onclick = () => {
   showRSS(MASTODON_FEED_URL);
 };
   
-showRSS(LOCAL_FEED_URL);
-
 CSS.paintWorklet.addModule('./particles.js');

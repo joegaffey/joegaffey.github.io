@@ -2,7 +2,7 @@
 <rss version="2.0">
 
 <channel>
-  <title>Joe's feed</title>
+  <title>Joe's Stuff feed</title>
   <link>https://www.joegaffey.com</link>
   <description>Some random stuff I did.</description>
   <!--<item>
@@ -12,6 +12,17 @@
     <link></link>
     <description></description>
   </item> -->
+  <item>
+    <title>Mastodon feed rendering</title>
+    <pubDate>04 Jan 2023</pubDate>
+    <category>Code</category>
+    <link>https://gist.github.com/joegaffey/46a44c45399afb5f89efef9d1bd5f247</link>
+    <description>
+      <p>I added a Social section/tab to the site based on my Mastodon feed.</p>
+      <p>I had to update the RSS rendering code to handle Mastodon's more complex RSS content structure.</p>
+      <p>Also took the opportunity to add some basic error handling, a loading indicator and URL shortening for readability.</p>
+    </description>
+  </item>  
   <item>
     <title>Render from RSS</title>
     <pubDate>03 Jan 2023</pubDate>
