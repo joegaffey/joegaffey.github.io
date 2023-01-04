@@ -8,21 +8,24 @@
   <!--<item>
     <title></title>
     <pubDate></pubDate>
+    <category></category>
     <link></link>
     <description></description>
   </item> -->
   <item>
-    <title>Render from RSS [Code]</title>
+    <title>Render from RSS</title>
     <pubDate>03 Jan 2023</pubDate>
+    <category>Code</category>
     <link>https://gist.github.com/joegaffey/46a44c45399afb5f89efef9d1bd5f247</link>
     <description>
-    <p>Here's the code snippet I use to render my RSS feed into this page avoiding a build step or content duplication.</p> 
+    <p>Here's the code snippet I used to render my RSS feed into this page and avoid a build step or content duplication.</p> 
     <p><b>Note:</b> Requires JavaScript to be enabled.</p>
     </description>
   </item>
   <item>
-    <title>Now available via RSS [Info]</title>
+    <title>Now available via RSS</title>
     <pubDate>03 Jan 2023</pubDate>
+    <category>Info</category>
     <link>./feed.rss</link>
     <description>
       <p>Given the surge in popularity of decentralized social media and the fediverse I thought it was high time to add an RSS feed to this site.</p>
@@ -30,38 +33,44 @@
     </description>
   </item>
   <item>
-    <title>MUlti-SCreen Layout EDitor [App]</title>
+    <title>MUlti-SCreen Layout EDitor</title>
     <pubDate>12 Apr 2022</pubDate>
+    <category>App</category>
     <link>https://muscled.glitch.me/</link>
     <description>New web app provides a 3D workspace to layout and assess the design of your multi-screen envrionment. Matched triples as used in sim racing to start with. Check it out.</description>
   </item>
   <item>
-    <title>FPS Tester [App]</title>
+    <title>FPS Tester</title>
     <pubDate>06 Jan 2022</pubDate>
+    <category>App</category>
     <link>https://web-fps.glitch.me/</link>
     <description>Very quick web app (made it while cooking rice) to display browser frame rate.</description>
   </item>
   <item>
-    <title>GameOff Wrap-up [Blog]</title>
+    <title>GameOff Wrap-up</title>
     <pubDate>01 Dec 2021</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/bugvsboxes/devlog/320242/gameoff-wrap-up</link>
     <description>Rather than crunch through the last couple of hours of the 2021 GameOff 'Bug' Jam and probably introduce Breaking Bugs (how did I not think of that as a name) I am writing a dev update as a form of retrospective over the month and to outline my plans for the game.</description>
   </item>
   <item>
-    <title>Power to the Beetle! [Blog]</title>
+    <title>Power to the Beetle!</title>
     <pubDate>27 Nov 2021</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/bugvsboxes/devlog/318799/power-to-the-beetle</link>
     <description>With the the end of the GameOff 2021 Game Jam rapidly approaching I managed to squeeze in one final major feature - Power Ups!</description>
   </item>
   <item>
-    <title>Bug vs. Boxes: in-game capture test [Video]</title>
+    <title>Bug vs. Boxes: in-game capture test</title>
     <pubDate>22 Nov 2021</pubDate>
+    <category>Video</category>
     <link>https://www.youtube.com/watch?v=pXhPvWurK6A</link>
     <description>With the the end of the GameOff 2021 Game Jam rapidly approaching I managed to squeeze in one final major feature - Power Ups!</description>
   </item>
   <item>
-    <title>Is that a record? [Blog]</title>
+    <title>Is that a record?</title>
     <pubDate>22 Nov 2021</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/bugvsboxes/devlog/317274/is-that-a-record</link>
     <description>
       <p>Coming to that stage of the development where polish, refinement and optimization are key.</p>
@@ -69,89 +78,103 @@
     </description>
   </item>
   <item>
-    <title>Half-Way There! [Blog]</title>
+    <title>Half-Way There!</title>
     <pubDate>16 Nov 2021</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/bugvsboxes/devlog/315332/half-way-there</link>
     <description>Half way through the GitHub GameOff game jam and things are actually pretty under control this time around.</description>
   </item>
   <item>
-    <title>WebHID DualShock 4 [Video]</title>
+    <title>WebHID DualShock 4</title>
     <pubDate>19 Sep 2021</pubDate>
+    <category>Video</category>
     <link>https://www.youtube.com/watch?v=XZfjJ_p9w6E</link>
     <description>Quick clip of my WebHID DualShock 4 demo.</description>
   </item>
   <item>
-    <title>Shift-Shift-Forward Episode 1: Game On! [Podcast]</title>
+    <title>Shift-Shift-Forward Episode 1: Game On!</title>
     <pubDate>15 Apr 2020</pubDate>
+    <category>Podcast</category>
     <link>https://blog.glitch.com/episode/ssf-001-game-on</link>
     <description>This episode is all about games — the ones we love to play, the ones that inspire our creativity, and the ones that make us want to create our own!</description>
   </item>
   <item>
-    <title>Biscuit Box Arcade Stick [Instructable]</title>
+    <title>Biscuit Box Arcade Stick</title>
     <pubDate>23 Dec 2018</pubDate>
+    <category>Instructable</category>
     <link>https://www.instructables.com/Biscuit-Box-Arcade-Stick/</link>
     <description>Got lots of empty biscuit boxes lying around over the holidays? Make use of one with this quick and fun project.</description>
   </item>
   <item>
-    <title>Modular Arcade Machine [Instructable]</title>
+    <title>Modular Arcade Machine</title>
     <link>https://www.instructables.com/Modular-Arcade-Machine/</link>
     <pubDate>29 Sep 2018</pubDate>
+    <category>Instructable</category>
     <description>
       <p>My two boys and I wanted to build an arcade machine but we couldn't decide what type to build between a full stand-up cabinet, a bar-top or a fight-stick style console to plug into a TV.</p>
       <p>It eventually occurred to us that we could build all three as a modular solution with modules that can be used individually or combined as desired.</p>
     </description>
   </item>
   <item>
-    <title>Giant Retro Gamepad [Instructable]</title>
+    <title>Giant Retro Gamepad</title>
     <pubDate>10 Sep 2018</pubDate>
+    <category>Instructable</category>
     <link>https://www.instructables.com/Giant-Retro-Gamepad/</link>
     <description>So we decided to make a giant working gamepad...</description>
   </item>
   <item>
-    <title>Codepen Retro Games Challenge [Blog]</title>
+    <title>Codepen Retro Games Challenge</title>
     <pubDate>27 Apr 2018</pubDate>
+    <category>Blog</category>
     <link>https://codepen.io/joegaffey/post/retro-challenge</link>
     <description>When the April Codepen Challenge turned up with a retro gaming theme I took the opportunity to combine some of my hobbies and get hands on with the latest web technologies by submitting an entry to each week of the challenge.</description>
   </item>
   <item>
-    <title>Post Jam Drop [Blog]</title>
+    <title>Post Jam Drop</title>
     <pubDate>28 Dec 2017</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/galaxeroids/devlog/19377/post-jam-drop</link>
     <description>Now that the game jam is over I have pushed some misc updates.</description>
   </item>
   <item>
-    <title>OMG PWA FTW! [Blog]</title>
+    <title>OMG PWA FTW!</title>
     <pubDate>11 Dec 2017</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/galaxeroids/devlog/17908/omg-pwa-ftw</link>
     <description>Almost forgot to mention, Galaxeroids is implemented as a Progressive Web Application (PWA) using the manifold.js PWA Builder. </description>
   </item>
   <item>
-    <title>It's full of stars... [Blog]</title>
+    <title>It's full of stars...</title>
     <pubDate>01 Dec 2017</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/galaxeroids/devlog/16761/its-full-of-stars</link>
     <description>Probably my final upload before the GameOff deadline.</description>
   </item>
   <item>
-    <title>Boss Audio [Blog]</title>
+    <title>Boss Audio</title>
     <pubDate>29 Nov 2017</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/galaxeroids/devlog/16684/boss-audio</link>
     <description>Two improvements in this last update are sound effects and the boss battle.</description>
   </item>
   <item>
-    <title>Control freak [Blog]</title>
+    <title>Control freak</title>
     <pubDate>26 Nov 2017</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/galaxeroids/devlog/16329/control-freak</link>
     <description>So today's updates are all about the controls.</description>
   </item>
   <item>
-    <title>Release the Destructorb! [Blog]</title>
+    <title>Release the Destructorb!</title>
     <pubDate>24 Nov 2017</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/galaxeroids/devlog/16235/release-the-destructorb-</link>
     <description>Just uploaded a new version with a couple of small but nice updates.</description>
   </item>
   <item>
-    <title>Enter Galaxeroids! [Blog]</title>
+    <title>Enter Galaxeroids!</title>
     <pubDate>23 Nov 2017</pubDate>
+    <category>Blog</category>
     <link>https://joegaffey.itch.io/galaxeroids/devlog/16072/enter-galaxeroids</link>
     <description>Galaxeroids is my entry to the 2017 GitHub Game Off. Its a retro arcade shooter homage to the late 70s classics that I'm basically using to recreate some fond childhood memories of the machines of that era with some newer game mechanics thrown in for extra fun.</description>
   </item>
