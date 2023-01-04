@@ -21,6 +21,7 @@ html, body {
   border: 0;
   margin: 0;  
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,7 @@ p {
   margin-bottom: 0;
   text-align: left;
   font-size: 0.9em;
+  line-height: 1.4;
 }
 
 h1 {
@@ -53,12 +55,14 @@ h2 {
   margin-top: 10px;
   margin-bottom: -8px;
   text-align: left;
-  font-size: 1.6em;
+  font-size: 1.5em;
+  width: 100%;
+  user-select: none;
 }
 
 h3 {
   margin-top: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   text-align: left;
   font-size: 1em;
 }
@@ -70,23 +74,36 @@ h4 {
   font-size: 0.8em;
 }
 
+h2 > span {
+  padding-right: 12px;
+}
+
+h2 > span:hover {
+  text-decoration: underline;
+}
+
+.h2Selected {
+  text-decoration: underline;
+}
+
+.posts {
+  width: 100%;
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 36px;
+}
+
 .posts > p {
   font-size: 0.8em;
   margin-bottom: 0;
 }
 
-
 .posts > a {
   font-size: 0.8em;
 }
 
-.posts {
-  margin-top: 0;
-  margin-bottom: 36px;
-}
-
 .posts > h3 {
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 
@@ -101,6 +118,10 @@ h4 {
   flex-direction: row; 
   margin-top: 8px;
   margin-bottom: 18px;
+}
+
+.blurb > h2 {
+  margin-bottom: 12px;
 }
 
 .headshot {
@@ -190,10 +211,6 @@ h4 {
   .card {
     width: 100%;
     border-radius: 0;
-  }
-  
-  .card > * {
-    margin-top: 0;
   }
   
   .card > h1 {
