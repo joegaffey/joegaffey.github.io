@@ -9,6 +9,7 @@ const FEED_ERROR_TXT  = `Feed unavailble, check back later`;
 const postsEl = document.querySelector('.posts');
 
 function showRSS(RSS_URL) {
+  postsEl.classList.add('noShiftHack');  
   fetch(RSS_URL)
     .then((response) => {
       if (response.ok) { return response.text(); }
@@ -37,6 +38,7 @@ function showRSS(RSS_URL) {
         `;
       });
       postsEl.innerHTML = html;
+      postsEl.classList.remove('noShiftHack');
     })
     .catch(e => { postsEl.innerHTML = `<h3>${FEED_ERROR_TXT}</h3>`; });
 }
