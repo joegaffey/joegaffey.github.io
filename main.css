@@ -44,6 +44,7 @@ p {
 
 h1 {
   font-family: 'Roboto Slab', serif;
+  font-display: optional;
   margin-top: 52px;
   margin-bottom: 24px;
   text-align: center;
@@ -52,6 +53,7 @@ h1 {
 
 h2 {
   font-family: 'Roboto Slab', serif;
+  font-display: optional;
   margin-top: 10px;
   margin-bottom: -8px;
   text-align: left;
@@ -91,6 +93,10 @@ h2 > span:hover {
   text-align: left;
   margin-top: 12px;
   margin-bottom: 36px;
+}
+
+.noShiftHack {
+  height: 5000px;
 }
 
 .posts > p {
