@@ -5,6 +5,7 @@ if(document.body.classList.contains('dark'))
 const MASTODON_FEED_URL = 'https://mastodon.social/users/joegaffey.rss';
 const LOCAL_FEED_URL  = `./feed.rss`;
 const FEED_ERROR_TXT  = `Feed unavailble, check back later`;
+const POST_ERROR_TXT  = `No post today`;
 
 const postsEl = document.querySelector('.posts');
 
