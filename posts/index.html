@@ -13,7 +13,7 @@
     <meta name="theme" content="dark">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
-    <script src="./main.js" defer></script>
+    <script src="./posts/post.js" defer></script>
     <script src="https://unpkg.com/css-paint-polyfill" defer></script>
   </head>
   <body class="dark">
@@ -38,29 +38,37 @@
           <a href="https://www.reddit.com/user/joegaffey" class="fa fa-reddit" aria-label="Reddit"></a>
           <a href="https://www.linkedin.com/in/jgaffey/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
         </div>
-        <div class="welcome">
-          <div class="blurb">
-            <h2>
-              Welcome! 
-            </h2>
-            <p>
-              This page is where I gather together some of the random content that I've scattered across the web.
-            </p>
-            <p>
-              Typically posts are related to Web Development, Hardware Hacking or some combination of these.
-            </p>
-            <p>
-              I list stuff here mainly for my own archival but you might find something interesting. Enjoy!
-            </p>
-          </div>
-          <div class="headshot"></div>
-        </div>
-        <h2>
-          <span class="stuffSelect h2Selected">Stuff</span>
-          <span class="socialSelect">Social</span>
-        </h2>
-        <div class="posts"><h3>Loading...</h3></div>
+        <div class="post"><h3>Loading...</h3></div>
+        <h3><a href="../">Home</a></h3>
       </div>
     </div>
   </body>
+  <script>
+    let darkTheme = false;
+    if(document.body.classList.contains('dark'))
+      darkTheme = true;
+
+    const POST_ERROR_TXT  = `No post today 🤷`;
+
+    const postsEl = document.querySelector('.post');
+
+    function showPost(POST_URL) {
+      console.log(POST_URL)
+      fetch('./posts/' + POST_URL + '.md')
+        .then((response) => {
+          if (response.ok) { return response.text(); }
+          else throw new Error('Something went wrong'); })
+        .then(str => {
+          postsEl.innerHTML = marked.parse(str);
+        })
+        .catch(e => { postsEl.innerHTML = `<h3>${POST_ERROR_TXT}</h3>`; });
+    }
+
+    showPost(document.location.hash.substring(1));
+
+    const stuffEl = document.querySelector('.stuffSelect');
+    const socialEl = document.querySelector('.socialSelect');
+
+    CSS.paintWorklet.addModule('./particles.js');
+  </script>
 </html>
