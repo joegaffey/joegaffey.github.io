@@ -16,7 +16,7 @@
     <title>Posting Posts Post</title>
     <pubDate>06 Jan 2023</pubDate>
     <category>Blog</category>
-    <link>./posts#2023/1/6/posts</link>
+    <link>./posts/#2023/1/6/posts</link>
     <description>I wanted the ability to write blog posts in markdown on the web for my static site hosted on GitHub. I also wanted to use the same tools I use to author the site i.e. GitHub and Glitch.
     </description>
   </item>
