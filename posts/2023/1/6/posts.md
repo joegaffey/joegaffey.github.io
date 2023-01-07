@@ -27,7 +27,7 @@ This means the site requires JavaScript to be available and enabled and is not a
 
 I could have researched SSG based static hosting options that output prerendered HTML but that would likely require additional services and certainly require a build step. Also I prefer to spend time in functional site code vs build configuration.  
 
-Another limitation of my approach is that the functionality implemented here is very basic and and additional capabilities such as analytics or comments will require additional integration that may be provided out of the box with the common off the shelf solutions.
+Another limitation of my approach is that the functionality implemented here is very basic and any additional capabilities such as analytics or comments will require additional integration that may be provided out of the box with the common off the shelf solutions.
 If you would like to reprimand me on the approach taken, feel free to reach out via one of the socials above.
 
 I think that about covers it. Now I just have to figure out something to write about...
