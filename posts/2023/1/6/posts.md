@@ -23,7 +23,7 @@ Firstly, my main driver is to have something simple and lightweight that I am in
 My secondary driver is the ability to post an update using most any web browser while staying with GitHub static hosting only.
 
 Of course nothing is free in this world and the major trade off I have accepted is the use of client side rendering using JavaScript.
-This means the site requires JavaScript to be available and enabled and is not as lightweight and could ultimately be if it was prerendered. 
+This means the site requires JavaScript to be available and enabled and is not as lightweight as it ultimately could be if it was prerendered. 
 
 I could have researched SSG based static hosting options that output prerendered HTML but that would likely require additional services and certainly require a build step. Also I prefer to spend time in functional site code vs build configuration.  
 
