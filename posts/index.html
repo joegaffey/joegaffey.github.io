@@ -13,7 +13,6 @@
     <meta name="theme" content="dark">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
-    <script src="./posts/post.js" defer></script>
     <script src="https://unpkg.com/css-paint-polyfill" defer></script>
   </head>
   <body class="dark">
@@ -68,6 +67,6 @@
     const stuffEl = document.querySelector('.stuffSelect');
     const socialEl = document.querySelector('.socialSelect');
 
-    CSS.paintWorklet.addModule('./particles.js');
+    CSS.paintWorklet.addModule('../particles.js');
   </script>
 </html>
