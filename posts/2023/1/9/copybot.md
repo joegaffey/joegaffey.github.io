@@ -35,3 +35,27 @@ I did expect it to do a lttle more sentence deconstruction which the post still 
 Seems to me this collaborative, iterative approach with a human in the loop is the best and safest way for now to use large language model based AIs such as ChatGPT. 
 
 What do you think?
+
+**UPDATE:** 
+
+It occurred to me that I should have asked ChatGPT to simplify the sentence structure so I tried that.
+
+*"Restructure the sentences to be more consice."*
+
+ChatGPT:
+
+*"I created a new '.md' file on GitHub to write blog posts for my static site using the same tools I use for authoring. 
+Previewing the generated output in the GitHub editor works well, and the directory structure for the post files was automatically created when I entered the file name with the path. 
+Next, I will use Glitch to render the post on my site. 
+The simplest solution is to use a new HTML page called 'post.html' that will fetch the markdown file using client-side JavaScript and render it with Marked. 
+The 'post' HTML page uses client-side routing to determine which '.md' file to load. 
+I will then add the post to my RSS feed, which is a simple static XML file that I can edit on Glitch or GitHub. 
+My goal was to have a simple and lightweight solution with significant control, and the trade-off was using client-side rendering with JavaScript, which requires JavaScript to be available and enabled. 
+Limitations of this approach include basic functionality, and additional capabilities such as analytics or comments would require additional integration."*
+
+This version is far less impressive. While shorter overall it doesn't do much for sentence structure and removes the paragraph structure completely.
+It also introduces factual errors and removes salient detail to the point that some sentences (last one in particular) don't really make sense any more.
+
+It appears I had already found the sweet spot for my AI copyeditor in the original post. Perhaps additional optimizations couild be discovered with further interrogation but this would push into questionable returns on time invested for such a short post.
+
+I also just noticed the typo in the first request to ChatGPT. Doesn't seem to have bothered it much.
