@@ -1,32 +1,35 @@
 class Particles {
   
   static get inputProperties() {
-    return [ '--paint-tick', '--partOpacity'];
+    return [ '--paint-tick', '--partOpacity', '--partCount', '--partMinSize', '--partMaxSize'];
   }
 
-  setupParticles(size) {
+  setupParticles(containerSize, props) {
     this.particlesArray = [];
-    for(let i = 0; i < 150; i++) {
-      const part = {};
-      this.setupParticle(part, size);
-      this.particlesArray.push(part);
+    for(let i = 0; i < parseInt(props.get('--partCount')); i++) {
+      const particle = {};
+      this.setupParticle(particle, 
+                         containerSize, 
+                         parseInt(props.get('--partMinSize')), 
+                         parseInt(props.get('--partMaxSize')));
+      this.particlesArray.push(particle);
     }
   }
 
-  setupParticle(part, size) {
-    part.x = Math.random() * size.width;
-    part.y = Math.random() * size.height;
+  setupParticle(part, containerSize, min, max) {
+    part.x = Math.random() * containerSize.width;
+    part.y = Math.random() * containerSize.height;
     part.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    part.size = 5 + Math.random() * 20;
+    part.size = min + Math.random() * max;
     // Flicker in animation - reverting to static for now
     // part.speed =  0.1 + Math.random();
     // part.direction = Math.random() * 90;
   }
 
-  paint(ctx, size, properties) {
+  paint(ctx, size, props) {
     // if(!this.particlesArray)
-    this.setupParticles(size);
-    ctx.globalAlpha = properties.get('--partOpacity');
+    this.setupParticles(size, props);
+    ctx.globalAlpha = parseFloat(props.get('--partOpacity'));
     this.particlesArray.forEach(part => {
       // if(part.x < 0 || part.x > size.width || 
       //    part.y < 0 || part.y > size.height)
@@ -42,4 +45,4 @@ class Particles {
   }    
 }
   
-registerPaint('particles', Particles)
+registerPaint('particles', Particles);
