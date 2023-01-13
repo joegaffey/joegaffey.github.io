@@ -13,6 +13,13 @@
     <description></description>
   </item> -->
   <item>
+    <title>Painting with CSS</title>
+    <pubDate>13 Jan 2023</pubDate>
+    <category>Blog</category>
+    <link>./posts/#2023/1/13/csspaint</link>
+    <description>I had an idea to brighten up the site a little and took the opportunity to try out the CSS Paint API.</description>
+  </item>
+  <item>
     <title>ChatGPT Copybot</title>
     <pubDate>09 Jan 2023</pubDate>
     <category>Blog</category>
