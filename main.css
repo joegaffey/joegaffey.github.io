@@ -51,11 +51,13 @@ p {
 pre {
   resize: both;
   overflow: auto;
+  white-space: pre-wrap; 
 }
 
 code {
   resize: both;
   overflow: auto;
+  white-space: pre-wrap; 
 }
 
 h1 {
