@@ -100,7 +100,7 @@ I included Google's Polyfill [script](https://github.com/GoogleChromeLabs/css-pa
 
     <script src="https://unpkg.com/css-paint-polyfill" defer></script>
 
-If you follow the links above to the source code on GitHub you'll see some additional code that been commented out.
+If you follow the links above to the source code on GitHub you'll see some additional code that's been commented out.
 This is placeholder code for animation to make the particles randomly drift slowly across the screen.
 
 The code works but the animation is quite janky as if it needs double buffering.
@@ -109,6 +109,7 @@ Let me know if you have any further knowledge or thoughts on this.
 
 This limitation aside I was quite happy with the result and the customization possibilities via CSS.
 It seems somehow less clunky than including an explicit background HTML canvas or SVG element.
-It would certainly be much more lightweight than a similar resolution raster image with the additional benefits of visual randomness and responsive design friendliness.
+
+It should also be more lightweight than a similar resolution raster image with the additional benefits of visual randomness and responsive design friendliness.
 
 Thanks for reading to here! Hope this post has provided some useful info or even inspiration for your own CSS Paint Worklet.
