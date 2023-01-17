@@ -19,7 +19,7 @@ function showRSS(RSS_URL) {
     .then(data => {
       const items = data.querySelectorAll("item");
       let html = ``;
-      items.forEach(el => {
+      items.forEach((el, index) => {
         const titleEl = el.querySelector("title");
         const categoryEl = el.querySelector("category");
         const linkEl = el.querySelector("link");
@@ -31,13 +31,14 @@ function showRSS(RSS_URL) {
         const description = getDescription(el.querySelector("description").innerHTML);
 
         html += `
-          <article>
+          <article style="--index:${index}">
             <h3>${title} [<a href="${link}">${category}</a>]</h3>
             ${(title == pubDate) ? `` : `<h4>${pubDate}</h4>`}
             <p>${description}</p>          
           </article>
         `;
       });
+      postsEl.classList.add('fadeout');
       postsEl.innerHTML = html;
       postsEl.classList.remove('noShiftHack');
     })
@@ -65,15 +66,15 @@ const socialEl = document.querySelector('.socialSelect');
 
 stuffEl.onclick = () => {
   postsEl.innerHTML = '<h3>Loading...</h3>';
-  socialEl.classList.remove('h2Selected');
-  stuffEl.classList.add('h2Selected');
+  socialEl.classList.remove('tabSelected');
+  stuffEl.classList.add('tabSelected');
   showRSS(LOCAL_FEED_URL);
 };
 
 socialEl.onclick = () => {
   postsEl.innerHTML = '<h3>Loading...</h3>';
-  stuffEl.classList.remove('h2Selected');
-  socialEl.classList.add('h2Selected');
+  stuffEl.classList.remove('tabSelected');
+  socialEl.classList.add('tabSelected');
   showRSS(MASTODON_FEED_URL);
 };
   

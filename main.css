@@ -34,6 +34,7 @@ body {
   font-family: 'Verdana', sans-serif;
   background: var(--bgColor);
   color: var(--color);
+  animation: fadein 0.4s linear forwards;
 }
 
 a {
@@ -50,14 +51,18 @@ p {
 
 pre {
   resize: both;
-  overflow: auto;
-  white-space: pre-wrap; 
+  overflow: hidden;
+  white-space: pre-wrap;
+  background: #111111;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: calc(100vw - 40px);
 }
 
-code {
-  resize: both;
-  overflow: auto;
-  white-space: pre-wrap; 
+article {
+  opacity: 0;
+  animation: fadein 0.2s linear forwards;
+  animation-delay: calc(var(--index) * 0.1s);
 }
 
 h1 {
@@ -94,15 +99,17 @@ h4 {
   font-size: 0.8em;
 }
 
-h2 > span {
+.selectTab {
   padding-right: 12px;
+  text-decoration: underline transparent;
+  transition: text-decoration-color 0.3s;
 }
 
-h2 > span:hover {
+.selectTab:hover {
   text-decoration: underline;
 }
 
-.h2Selected {
+.tabSelected {
   text-decoration: underline;
 }
 
@@ -112,15 +119,26 @@ h2 > span:hover {
   margin-top: 12px;
   margin-bottom: 36px;
   scrollbar-gutter: stable;
+  animation: fadein 0.15s linear forwards;
 }
 
 .noShiftHack {
   height: 5000px;
 }
 
-.posts > p {
-  font-size: 0.8em;
-  margin-bottom: 0;
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+  0% { opacity: 0; }
+  100% {opacity: 1; }
+}
+
+.fadeout {
+  animation: fadeout 0.15s linear forwards;
+  animation-delay: calc(var(--index) * 100ms);
 }
 
 .posts > a {
@@ -130,7 +148,6 @@ h2 > span:hover {
 .posts > h3 {
   margin-top: 14px;
 }
-
 
 .subtitle {
   margin-bottom: 18px;

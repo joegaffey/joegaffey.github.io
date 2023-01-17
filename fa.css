@@ -10,13 +10,14 @@
 .fa {
   font-size: 30px;
   display: flex;
- justify-content: center;
+  justify-content: center;
   padding: 10px;
   height: 30px;
   width: 30px;
   text-decoration: none;
   margin: 2px 4px;
   border-radius: 50%;
+  transition: all .05s ease-in-out; 
 }
 
 .fa:hover {
