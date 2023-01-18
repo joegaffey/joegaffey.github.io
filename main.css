@@ -82,7 +82,6 @@ h2 {
   text-align: left;
   font-size: 1.5em;
   width: 100%;
-  user-select: none;
 }
 
 h3 {
@@ -100,6 +99,7 @@ h4 {
 }
 
 .selectTab {
+  user-select: none;
   padding-right: 12px;
   text-decoration: underline transparent;
   transition: text-decoration-color 0.3s;
@@ -167,6 +167,7 @@ h4 {
 }
 
 .headshot {
+  user-select: none;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 20px;
