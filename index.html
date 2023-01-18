@@ -15,11 +15,12 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
     <script src="./main.js" defer></script>
     <script src="https://unpkg.com/css-paint-polyfill" defer></script>
+    <noscript><style> .jsonly { display: none } </style></noscript>
   </head>
   <body class="dark">
     <div class="particles-container"></div>  
     <div class="card-container">
-      <div class="card jg-card currentCard">
+      <div class="card">
         <h1>Joe Gaffey</h1>
         <div class="subtitle">
           CODE / WEB / APPS / HARDWARE
@@ -55,11 +56,11 @@
           </div>
           <div class="headshot"></div>
         </div>
-        <h2>
+        <h2 class="jsonly">
           <span class="selectTab stuffSelect tabSelected">Stuff</span>
           <span class="selectTab socialSelect">Social</span>
         </h2>
-        <div class="posts"><h3>Loading...</h3></div>
+        <div class="posts jsonly"><h3>Loading...</h3></div>
       </div>
     </div>
   </body>
