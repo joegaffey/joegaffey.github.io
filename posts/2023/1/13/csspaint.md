@@ -8,7 +8,7 @@ This nifty standard allows the creation of a paint worklet in JavaScript that ca
 The actual drawing API uses the HTML5 canvas that is already familiar to many web developers.
 
 To use it you can define a class with a _paint_ render method and register it as a paint worklet via the _registerPaint_ global function.
-Check out [_particles.js_](https://github.com/joegaffey/joegaffey.github.io/blob/master/particles.js) to see what my worklet looks like:
+Check out [_particles.js_](https://github.com/joegaffey/joegaffey.github.io/blob/2359c817a9c4dd5663de50acbaa8558b62471ce0/particles.js) to see what my worklet looks like:
 
     class Particles {
 
@@ -60,7 +60,7 @@ Note the _inputProperties_ method that defines the CSS variables that are used t
 
 Also note that these properties are [_CSSUnparsedValue_](https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue) type so best to explicitly parse to the correct number format.
 
-The particle variables are then defined in [_main.css_](https://github.com/joegaffey/joegaffey.github.io/blob/master/main.css) (finally some actual CSS):
+The particle variables are then defined in [_main.css_](https://github.com/joegaffey/joegaffey.github.io/blob/2359c817a9c4dd5663de50acbaa8558b62471ce0/main.css) (finally some actual CSS):
 
     .dark {
       --bgColor: #050505;
@@ -88,7 +88,7 @@ Finally the paint worklet is applied to the container element for the particles.
       background: paint(particles);
     }
 
-We also need to explicitly load the JavaScript module that contains the worklet. This is done in the main site JavaScript file [_main.js_](https://github.com/joegaffey/joegaffey.github.io/blob/master/main.js):
+We also need to explicitly load the JavaScript module that contains the worklet. This is done in the main site JavaScript file [_main.js_](https://github.com/joegaffey/joegaffey.github.io/blob/2359c817a9c4dd5663de50acbaa8558b62471ce0/main.js):
 
     CSS.paintWorklet.addModule('./particles.js');
 
@@ -96,7 +96,7 @@ This is everything that is needed to get CSS painting in a fully compliant brows
 Unfortunately not all browsers support the standard (looking at you [Safari and Firefox](https://caniuse.com/mdn-api_css_paintworklet)).
 However, given that the standard reuses the HTML5 canvas API I guess it's a pretty easy API to [Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill).
 
-I included Google's Polyfill [script](https://github.com/GoogleChromeLabs/css-paint-polyfill) in the site's [_index.html_](https://github.com/joegaffey/joegaffey.github.io/blob/master/index.html) to use the worklet in non-natively-supporting browsers:
+I included Google's Polyfill [script](https://github.com/GoogleChromeLabs/css-paint-polyfill) in the site's [_index.html_](https://github.com/joegaffey/joegaffey.github.io/blob/2359c817a9c4dd5663de50acbaa8558b62471ce0/index.html) to use the worklet in non-natively-supporting browsers:
 
     <script src="https://unpkg.com/css-paint-polyfill" defer></script>
 
