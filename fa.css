@@ -27,12 +27,16 @@
 
 .fa-twitter {
   background: #55ACEE;
+  background-image: url(./assets/twitter.svg);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: white;
 }
 
 .fa-mastodon {
   background-color: #dddddd;
-  background-image: url(./assets/Mastodon_Logotype_Simple.svg);
+  background-image: url(./assets/mastodon.svg);
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -40,32 +44,55 @@
 }
 
 .fa-linkedin {
-  background: #007bb5;
+  background: white;
+/*   background: #007bb5; */
+  background-image: url(./assets/linkedin.svg);
+  background-size: 120px 120px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
   color: white;
 }
 
 .fa-youtube {
   background: #bb0000;
+  background-image: url(./assets/youtube.svg);
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: white;
 }
 
 .fa-rss {
   background: #ff6600;
+  background-image: url(./assets/rss.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: white;
 }
 
 .fa-reddit {
   background: #ff5700;
+  background-image: url(./assets/reddit.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: white;
 }
 
 .fa-github {
   background: #6cc644;
+  background-image: url(./assets/github.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: white;
 }
 
 .fa-codepen {
   background: #ae63e4;
+  background-image: url(./assets/codepen.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: white;
 }
 
@@ -84,26 +111,27 @@
 }
 
 .fa-itch {
-  background: url(./assets/itch_logo.png);
-  background-size: 40px 40px;
-/*     background-repeat: no-repeat; */
-  background-position: 50% 50%;
+  background-color: red;
+  background-image: url(./assets/itch.svg);
+  background-size: 38px 38px;
+  background-repeat: no-repeat;
+  background-position: 8px 6px;
   color: white;
 }
 
 .fa-instructables {
-  background-color: #dddddd;
-  background-image: url(./assets/instructables_logo.png);
-  background-size: 80px 80px;
+  background-color: #DDDDDD;
+  background-image: url(./assets/instructables.svg);
+  background-size: 35px 35px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 10px 8px;
   color: white;
 }
 
 .fa-sketchfab {
-  background-color: white;
-  background-image: url(./assets/sketchfab-logo.png);
-  background-size: cover;
+  background-color: #1AAAD9;
+  background-image: url(./assets/sketchfab.svg);
+  background-size: 50px 50px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   color: white;
