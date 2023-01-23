@@ -1,13 +1,4 @@
-.fa-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; 
-  flex-flow: row wrap;
-  justify-content: center; 
-  padding: 20px;
-}
-
-.fa {
+.icon {
   user-select: none;
   font-size: 30px;
   display: flex;
@@ -16,93 +7,84 @@
   height: 30px;
   width: 30px;
   text-decoration: none;
-  margin: 2px 4px;
+  margin: 4px 4px;
   border-radius: 50%;
   transition: all .05s ease-in-out; 
+  color: white;
 }
 
-.fa:hover {
+.icon:hover {
   transform: scale(1.25);
 }
 
-.fa-twitter {
+.icon-twitter {
   background: #55ACEE;
   background-image: url(./assets/twitter.svg);
   background-size: 35px 35px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
-.fa-mastodon {
+.icon-mastodon {
   background-color: #dddddd;
   background-image: url(./assets/mastodon.svg);
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
-.fa-linkedin {
+.icon-linkedin {
   background: white;
-/*   background: #007bb5; */
   background-image: url(./assets/linkedin.svg);
   background-size: 120px 120px;
   background-repeat: no-repeat;
   background-position: 10px 10px;
-  color: white;
 }
 
-.fa-youtube {
+.icon-youtube {
   background: #bb0000;
   background-image: url(./assets/youtube.svg);
   background-size: 32px 32px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
-.fa-rss {
+.icon-rss {
   background: #ff6600;
   background-image: url(./assets/rss.svg);
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
-.fa-reddit {
+.icon-reddit {
   background: #ff5700;
   background-image: url(./assets/reddit.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
-.fa-github {
+.icon-github {
   background: #6cc644;
   background-image: url(./assets/github.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
-.fa-codepen {
+.icon-codepen {
   background: #ae63e4;
   background-image: url(./assets/codepen.svg);
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
-.fa-glitch {
+.icon-glitch {
   background-color: #ffaabf;
   background-image: url(./assets/glitch.svg);
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }
 
 .glitch-logo {
@@ -110,29 +92,26 @@
   height: 30px;
 }
 
-.fa-itch {
+.icon-itch {
   background-color: red;
   background-image: url(./assets/itch.svg);
   background-size: 38px 38px;
   background-repeat: no-repeat;
   background-position: 8px 6px;
-  color: white;
 }
 
-.fa-instructables {
+.icon-instructables {
   background-color: #DDDDDD;
   background-image: url(./assets/instructables.svg);
   background-size: 35px 35px;
   background-repeat: no-repeat;
   background-position: 10px 8px;
-  color: white;
 }
 
-.fa-sketchfab {
+.icon-sketchfab {
   background-color: #1AAAD9;
   background-image: url(./assets/sketchfab.svg);
   background-size: 50px 50px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  color: white;
 }

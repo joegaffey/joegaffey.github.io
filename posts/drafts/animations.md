@@ -1,5 +1,7 @@
 # DRAFT COPY
 
+#### @TODO Update code permalinks
+
 ## Smooth surfing with CSS Animation
 
 ### DD Mon Year
@@ -60,26 +62,26 @@ This time I used a [CSS transition](https://developer.mozilla.org/en-US/docs/Web
       text-decoration: underline;
     }
 
-Finally I wanted to match the grow/shrink effect on my [Font Awesome](https://fontawesome.com/) based social/link icons with the transition smoothing animations from the rest of the page.
+Finally I wanted to match the grow/shrink effect on my social/link icons with the transition smoothing animations from the rest of the page.
 
-To do this I edited the dedicated Font Awesome CSS file [_fa.css_](https://github.com/joegaffey/joegaffey.github.io/blob/2359c817a9c4dd5663de50acbaa8558b62471ce0/fa.css).
+To do this I edited the dedicated icons CSS file [_icons.css_](https://github.com/joegaffey/joegaffey.github.io/blob/2359c817a9c4dd5663de50acbaa8558b62471ce0/fa.css).
 
-The _.fa_ class already had the _.fa:hover_ pseudo class defined with a scale transform so all I did was add a suitable transition to the _.fa_ class.
+The _.icon_ class already had the _.icon:hover_ pseudo class defined with a scale transform so all I did was add a suitable transition to the _.fa_ class.
 
-    .fa {
+    .icon {
       ...
       transition: all .05s ease-in-out; 
     }
 
-    .fa:hover {
+    .icon:hover {
       transform: scale(1.25);
     }
 
 That's all the animation based improvements I thought to add so far. 
 When combined I think they add a lot to the overall usability and friendliness of the site.
 
-I had initially thought to add some fly-in animations for the articles but I think the more subtle fade-in is less intrusive.
-In general I would say less is more when it comes to page animations so good to keep it low key.
+I had initially thought to use some fly-in animations for the post article elements but I think the fade-in more subtle and less intrusive.
+In general I would say less is more when it comes to animation so good to keep it low key.
 
 Hopefully someone will find something here useful or interesting at least. 
 Let me know what you think via the social links above. Thanks for reading!
