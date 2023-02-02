@@ -1,6 +1,6 @@
 ## Smooth surfing with CSS Animation
 
-### 01 Feb 2023
+### 02 Feb 2023
 
 The abrupt loading and content transitions on this site were starting to grate on me so I decided to do something about it.
 
