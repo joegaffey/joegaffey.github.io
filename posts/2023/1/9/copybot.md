@@ -6,7 +6,7 @@ I wasn't fully satisfied with the readability of my previous post so I asked (yo
 
 I typed:
 
-*"Rewite the following blog post with improved grammar and readability."*
+> *"Rewite the following blog post with improved grammar and readability."*
 
 ...and included the content from the original post [here](https://joegaffey.com/posts/#2023/1/6/posts) as ChatGPT can't make web requests.
 
@@ -40,7 +40,7 @@ What do you think?
 
 It occurred to me that I should have asked ChatGPT to simplify the sentence structure so I tried that.
 
-*"Restructure the sentences to be more consice."*
+> *"Restructure the sentences to be more consice."*
 
 ChatGPT:
 
