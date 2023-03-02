@@ -6,7 +6,7 @@
 
 Ever wonder how simple a 3D editor could be? Like, what is the essential, unavoidable complexity that must be exposed to a user for even basic functionality.
 
-[3table](https://3table.glitch.me/) is a web experiment on exploring this idea. 
+[3table](https://3table.glitch.me/) is a web experiment based on exploring this idea. 
 
 <br/><img src="./drafts/3table_shot1.jpg" alt="3table cube screenshot" width="60%" height="60%">
 
