@@ -1,8 +1,6 @@
-# DRAFT COPY
-
 ## Introducing 3table
 
-### DD Mon Year
+### 05 Mar 2023
 
 Ever wonder how simple a 3D editor could be?
 
