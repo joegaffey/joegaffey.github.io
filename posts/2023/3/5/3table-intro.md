@@ -8,7 +8,7 @@ Like, what is the essential, unavoidable complexity that must be exposed to a us
 
 [3table](https://3table.glitch.me/) is a web experiment based on exploring this idea.
 
-<br/><img src="./drafts/3table_shot1.jpg" alt="3table cube screenshot" width="60%" height="60%">
+<br/><img src="./2023/3/5/3table_shot1.jpg" alt="3table cube screenshot" width="60%" height="60%">
 
 The above screenshot taken from my smartphone browser is what you get on first load.
 I provided some basic shapes such as the default sacrificial cube shown (incantations optional).
@@ -43,12 +43,12 @@ In particular, it may be well suited for use cases where a simple modeling task 
 
 As well as some basic primitive shapes, I included some aluminum profile parts that can be used to design profile-based constructions as in the image below.
 
-<br/><img src="./drafts/3table_shot2.jpg" alt="3table rig screenshot" width="60%" height="60%">
+<br/><img src="./2023/3/5/3table_shot2.jpg" alt="3table rig screenshot" width="60%" height="60%">
 
 The BOM feature is particularly useful for this kind of use case as I included a facility in the parts specification to allow for the addition of part accessories.
 In the example above, the nuts and bolts required to assemble the rig are defined as accessories on the corner parts, allowing the app to calculate the total number required.
 
-<br/><img src="./drafts/3table_shot3.jpg" alt="3table BOM screenshot" width="60%" height="60%">
+<br/><img src="./2023/3/5/3table_shot3.jpg" alt="3table BOM screenshot" width="60%" height="60%">
 
 One of the things I'd like to do next is create sets of object libraries for different domains and use cases such as basic shapes, aluminum profile, furniture perhaps.
 Let me know if you have an idea for an object set you would like to see included.
