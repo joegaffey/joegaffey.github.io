@@ -62,20 +62,46 @@ function getDescription(textIn) {
 showRSS(MASTODON_FEED_URL);
 
 const stuffEl = document.querySelector('.stuffSelect');
-const socialEl = document.querySelector('.socialSelect');
-
 stuffEl.onclick = () => {
   contentEl.innerHTML = '<h3>Loading...</h3>';
-  socialEl.classList.remove('tabSelected');
+  document.querySelector('.tabSelected').classList.remove('tabSelected');
   stuffEl.classList.add('tabSelected');
   showRSS(LOCAL_FEED_URL);
 };
 
+const socialEl = document.querySelector('.socialSelect');
 socialEl.onclick = () => {
   contentEl.innerHTML = '<h3>Loading...</h3>';
-  stuffEl.classList.remove('tabSelected');
+  document.querySelector('.tabSelected').classList.remove('tabSelected');
   socialEl.classList.add('tabSelected');
   showRSS(MASTODON_FEED_URL);
 };
+
+const gamesEl = document.querySelector('.gamesSelect');
+gamesEl.onclick = () => {
+  contentEl.innerHTML = '<h3>Loading...</h3>';
+  document.querySelector('.tabSelected').classList.remove('tabSelected');
+  gamesEl.classList.add('tabSelected');
+  loadMD('games.md', contentEl);
+};
+
+const appsEl = document.querySelector('.appsSelect');
+appsEl.onclick = () => {
+  contentEl.innerHTML = '<h3>Loading...</h3>';
+  document.querySelector('.tabSelected').classList.remove('tabSelected');
+  appsEl.classList.add('tabSelected');
+  loadMD('apps.md', contentEl);
+};
+
+function loadMD(path, el) {
+  fetch(path)
+    .then((response) => {
+      if (response.ok) { return response.text(); }
+      else throw new Error('Something went wrong'); })
+    .then(str => {
+      el.innerHTML = marked.parse(str);
+    });
+}
+
   
 CSS.paintWorklet.addModule('./particles.js');
