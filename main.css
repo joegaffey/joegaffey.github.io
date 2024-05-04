@@ -161,12 +161,6 @@ h4 {
   margin-top: 14px;
 }
 
-.subtitle {
-  margin-bottom: 18px;
-  text-align: center;
-  font-size: 0.8em;
-}
-
 .welcome {
   display: flex;
   flex-direction: row; 
