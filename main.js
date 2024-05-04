@@ -59,7 +59,7 @@ function getDescription(textIn) {
   return pEl ? `<p>${pEl.innerHTML}</p>` : textIn;
 }
 
-showRSS(LOCAL_FEED_URL);
+showRSS(MASTODON_FEED_URL);
 
 const stuffEl = document.querySelector('.stuffSelect');
 const socialEl = document.querySelector('.socialSelect');
