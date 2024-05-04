@@ -7,10 +7,10 @@ const LOCAL_FEED_URL  = `./feed.rss`;
 const FEED_ERROR_TXT  = `Feed unavailble, check back later`;
 const POST_ERROR_TXT  = `No post today`;
 
-const postsEl = document.querySelector('.posts');
+const contentEl = document.querySelector('.content');
 
 function showRSS(RSS_URL) {
-  postsEl.classList.add('noShiftHack');  
+  contentEl.classList.add('noShiftHack');  
   fetch(RSS_URL)
     .then((response) => {
       if (response.ok) { return response.text(); }
@@ -38,11 +38,11 @@ function showRSS(RSS_URL) {
           </article>
         `;
       });
-      postsEl.classList.add('fadeout');
-      postsEl.innerHTML = html;
-      postsEl.classList.remove('noShiftHack');
+      contentEl.classList.add('fadeout');
+      contentEl.innerHTML = html;
+      contentEl.classList.remove('noShiftHack');
     })
-    .catch(e => { postsEl.innerHTML = `<h3>${FEED_ERROR_TXT}</h3>`; });
+    .catch(e => { contentEl.innerHTML = `<h3>${FEED_ERROR_TXT}</h3>`; });
 }
 
 function getDescription(textIn) {
@@ -65,14 +65,14 @@ const stuffEl = document.querySelector('.stuffSelect');
 const socialEl = document.querySelector('.socialSelect');
 
 stuffEl.onclick = () => {
-  postsEl.innerHTML = '<h3>Loading...</h3>';
+  contentEl.innerHTML = '<h3>Loading...</h3>';
   socialEl.classList.remove('tabSelected');
   stuffEl.classList.add('tabSelected');
   showRSS(LOCAL_FEED_URL);
 };
 
 socialEl.onclick = () => {
-  postsEl.innerHTML = '<h3>Loading...</h3>';
+  contentEl.innerHTML = '<h3>Loading...</h3>';
   stuffEl.classList.remove('tabSelected');
   socialEl.classList.add('tabSelected');
   showRSS(MASTODON_FEED_URL);
