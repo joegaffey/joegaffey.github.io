@@ -8,7 +8,7 @@ Sad to see some of these massive community oriented services like [Twitter](http
 
 Still I think there is much cause for hope in the web with the growing Fediverse all its quirks, weirdness and challenges notwithstanding.
 
-It feels to me (and if I've read the chatroom correctly many others too) quite reminiscent of the pre Web 2.0 days before the Internet was siloed off into a handful of major sites all linking to each other and sucking up content like a Roomba [Hoover for fellow Gen Xers] with a broken off switch.
+It feels to me, and if I've read the chatroom correctly many others too, quite reminiscent of the pre Web 2.0 days before the Internet was siloed off into a handful of major sites all linking to each other and sucking up content like a Roomba [Hoover for fellow Gen Xers] with a broken off switch.
 
 It's really starting to feel like the start of something big that like the original Web 1.0 can benefit all of society as its [creators](https://en.wikipedia.org/wiki/Tim_Berners-Lee) intended.
 
