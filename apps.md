@@ -1,3 +1,7 @@
+These are mostly experiments used to learn a technology or try out a novel UX pattern. 
+
+If you see something useful let me know!
+
 ### 3table
 
 Simplified tabular design for 3D. An experimental CSV based 3D file format and modelling app. 
