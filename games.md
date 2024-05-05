@@ -1,4 +1,4 @@
-Find various games I written in various levels of completion here. Get them while they're hot!
+Find some random games I've authored to various levels of completion here. Get them while they're hot!
 
 If you like something let me know and I might even be inspired to do an update.
 
