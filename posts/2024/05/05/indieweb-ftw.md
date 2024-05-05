@@ -10,9 +10,9 @@ Still I think there is much cause for hope in the web with the growing Fediverse
 
 It feels to me, and if I've read the chatroom correctly many others too, quite reminiscent of the pre Web 2.0 days before the Internet was siloed off into a handful of major sites all linking to each other and sucking up content like a Roomba [Hoover for fellow Gen Xers] with a broken off switch.
 
-It's really starting to feel like the start of something big that like the original Web 1.0 can benefit all of society as its [creators](https://en.wikipedia.org/wiki/Tim_Berners-Lee) intended.
+It's really starting to feel like the start of something big that, like the promise of the original Web 1.0, can benefit all of society as its [creators](https://en.wikipedia.org/wiki/Tim_Berners-Lee) intended.
 
-So I'm pretty excited to see where this will go next and I'm keeping an eye on [Self-sovereign Identities](https://en.wikipedia.org/wiki/Self-sovereign_identity) and [Decentralized Data Spaces](https://solidproject.org/) in particular to see where they might take us in the future.
+So I'm pretty excited to see where all this will go next and I'm keeping an eye on [Self-sovereign Identities](https://en.wikipedia.org/wiki/Self-sovereign_identity) and [Decentralized Data Spaces](https://solidproject.org/) in particular to see where they might take us in the future.
 
 Or maybe it's all just another bubble of nostalgic old folk collectively waving their fists at clouds while cheering each other on.
 
