@@ -4,13 +4,12 @@ if(document.body.classList.contains('dark'))
 
 const MASTODON_FEED_URL = 'https://mastodon.social/users/joegaffey.rss';
 const LOCAL_FEED_URL  = `./feed.rss`;
-const FEED_ERROR_TXT  = `Feed unavailble, check back later`;
-const POST_ERROR_TXT  = `No post today`;
+const FEED_ERROR_TXT  = `Mastodon feed is unavailble, please check back later.`;
+const POST_ERROR_TXT  = `No post today 😞`;
 
 const contentEl = document.querySelector('.content');
 
-function showRSS(RSS_URL) {
-  contentEl.classList.add('noShiftHack');  
+function showRSS(RSS_URL, onComplete) {
   fetch(RSS_URL)
     .then((response) => {
       if (response.ok) { return response.text(); }
@@ -40,9 +39,14 @@ function showRSS(RSS_URL) {
       });
       contentEl.classList.add('fadeout');
       contentEl.innerHTML = html;
-      contentEl.classList.remove('noShiftHack');
+      if(onComplete)
+        onComplete();
     })
-    .catch(e => { contentEl.innerHTML = `<h3>${FEED_ERROR_TXT}</h3>`; });
+    .catch(e => { 
+      contentEl.innerHTML = `<h3>${FEED_ERROR_TXT}</h3>`; 
+      if(onComplete) 
+        onComplete();
+    });
 }
 
 function getDescription(textIn) {
@@ -66,7 +70,8 @@ stuffEl.onclick = () => {
   contentEl.innerHTML = '<h3>Loading...</h3>';
   document.querySelector('.tabSelected').classList.remove('tabSelected');
   stuffEl.classList.add('tabSelected');
-  showRSS(LOCAL_FEED_URL);
+  contentEl.classList.add('noShiftHack');
+  showRSS(LOCAL_FEED_URL, () => { contentEl.classList.remove('noShiftHack')});
 };
 
 const socialEl = document.querySelector('.socialSelect');
@@ -74,7 +79,8 @@ socialEl.onclick = () => {
   contentEl.innerHTML = '<h3>Loading...</h3>';
   document.querySelector('.tabSelected').classList.remove('tabSelected');
   socialEl.classList.add('tabSelected');
-  showRSS(MASTODON_FEED_URL);
+  contentEl.classList.add('noShiftHack');
+  showRSS(MASTODON_FEED_URL, () => { contentEl.classList.remove('noShiftHack')});
 };
 
 const gamesEl = document.querySelector('.gamesSelect');
@@ -82,7 +88,8 @@ gamesEl.onclick = () => {
   contentEl.innerHTML = '<h3>Loading...</h3>';
   document.querySelector('.tabSelected').classList.remove('tabSelected');
   gamesEl.classList.add('tabSelected');
-  loadMD('games.md', contentEl);
+  contentEl.classList.add('noShiftHack');
+  loadMD('games.md', contentEl, () => contentEl.classList.remove('noShiftHack'));
 };
 
 const appsEl = document.querySelector('.appsSelect');
@@ -90,18 +97,25 @@ appsEl.onclick = () => {
   contentEl.innerHTML = '<h3>Loading...</h3>';
   document.querySelector('.tabSelected').classList.remove('tabSelected');
   appsEl.classList.add('tabSelected');
-  loadMD('apps.md', contentEl);
+  contentEl.classList.add('noShiftHack');
+  loadMD('apps.md', contentEl, () => contentEl.classList.remove('noShiftHack'));
 };
 
-function loadMD(path, el) {
+function loadMD(path, el, onComplete) {
   fetch(path)
     .then((response) => {
       if (response.ok) { return response.text(); }
-      else throw new Error('Something went wrong'); })
+      else { 
+        if(onComplete)
+          onComplete();
+        throw new Error('Something went wrong');
+      }
+    })
     .then(str => {
       el.innerHTML = marked.parse(str);
+      if(onComplete)
+        onComplete();
     });
 }
-
   
 CSS.paintWorklet.addModule('./particles.js');
