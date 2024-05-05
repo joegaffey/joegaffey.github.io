@@ -1,3 +1,7 @@
+## Indieweb FTW!
+
+### 05 May 2024
+
 Doing my bit for the [#IndieWeb](https://mastodon.social/tags/indieweb) today by updating [joegaffey.com](joegaffey.com) and starting to claw back or at least better catalogue some of the content that I've posted to across the myriad Web 2.0 services over the years.
 
 Sad to see massive community oriented services like [Twitter](https://twitter.com/) fall so low and even web development stalwarts like [CodePen](https://codepen.io/) starting to lose some luster as the mega-corps do their thing.
