@@ -2,7 +2,7 @@
 
 ### 05 May 2024
 
-Doing my bit for the ol' [#IndieWeb](https://mastodon.social/tags/indieweb) today by updating [joegaffey.com](joegaffey.com) and starting to claw back or at least better catalogue some of the content that I've posted to across the myriad Web 2.0 services over the years.
+Doing my bit for the ol' [#IndieWeb](https://mastodon.social/tags/indieweb) today by updating [joegaffey.com](joegaffey.com) and starting to claw back or at least better catalogue some of the content that I've posted across the various Web 2.0 services over the years.
 
 Sad to see some of these massive community oriented services like [Twitter](https://twitter.com/) fall so low and even the mighty Google succumbing to the ravages of enshittification in the fevered rush to keep the AI bubble growing.
 
