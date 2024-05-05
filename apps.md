@@ -1,6 +1,6 @@
 ### 3table
 
-Tabular design for 3D. CSV based file format and modelling app. 
+Simplified tabular design for 3D. An experimental CSV based 3D file format and modelling app. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/11TeA7der1Q?si=R32EYG0om4uGIJtq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
