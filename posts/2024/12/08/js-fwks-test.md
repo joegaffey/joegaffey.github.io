@@ -1,6 +1,6 @@
-# JS Frameworks Quick Test
+## JS Frameworks Quick Test
 
-## 08/12/24
+### 08/12/24
 
 Originally posted as a Mastodon [thread](https://mastodon.social/@joegaffey/113617401223701568).
 
