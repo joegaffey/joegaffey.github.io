@@ -63,43 +63,26 @@ function getDescription(textIn) {
   return pEl ? `<p>${pEl.innerHTML}</p>` : textIn;
 }
 
-showRSS(MASTODON_FEED_URL);
-
-const stuffEl = document.querySelector('.stuffSelect');
-stuffEl.onclick = () => {
-  contentEl.innerHTML = '<h3>Loading...</h3>';
-  document.querySelector('.tabSelected').classList.remove('tabSelected');
-  stuffEl.classList.add('tabSelected');
-  contentEl.classList.add('noShiftHack');
-  showRSS(LOCAL_FEED_URL, () => { contentEl.classList.remove('noShiftHack')});
+const TABS = {
+  social: (onComplete) => showRSS(MASTODON_FEED_URL, onComplete),
+  posts:  (onComplete) => showRSS(LOCAL_FEED_URL, onComplete),
+  apps:   (onComplete) => loadMD('apps.md', contentEl, onComplete),
+  games:  (onComplete) => loadMD('games.md', contentEl, onComplete),
 };
 
-const socialEl = document.querySelector('.socialSelect');
-socialEl.onclick = () => {
-  contentEl.innerHTML = '<h3>Loading...</h3>';
-  document.querySelector('.tabSelected').classList.remove('tabSelected');
-  socialEl.classList.add('tabSelected');
-  contentEl.classList.add('noShiftHack');
-  showRSS(MASTODON_FEED_URL, () => { contentEl.classList.remove('noShiftHack')});
-};
+function selectTab(name) {
+  const load = TABS[name] || TABS.social;
+  const selectEl = document.querySelector('.' + (name in TABS ? name : 'social') + 'Select');
 
-const gamesEl = document.querySelector('.gamesSelect');
-gamesEl.onclick = () => {
+  document.querySelector('.tabSelected')?.classList.remove('tabSelected');
+  selectEl?.classList.add('tabSelected');
   contentEl.innerHTML = '<h3>Loading...</h3>';
-  document.querySelector('.tabSelected').classList.remove('tabSelected');
-  gamesEl.classList.add('tabSelected');
   contentEl.classList.add('noShiftHack');
-  loadMD('games.md', contentEl, () => contentEl.classList.remove('noShiftHack'));
-};
+  load(() => contentEl.classList.remove('noShiftHack'));
+}
 
-const appsEl = document.querySelector('.appsSelect');
-appsEl.onclick = () => {
-  contentEl.innerHTML = '<h3>Loading...</h3>';
-  document.querySelector('.tabSelected').classList.remove('tabSelected');
-  appsEl.classList.add('tabSelected');
-  contentEl.classList.add('noShiftHack');
-  loadMD('apps.md', contentEl, () => contentEl.classList.remove('noShiftHack'));
-};
+selectTab(location.hash.slice(1));
+window.addEventListener('hashchange', () => selectTab(location.hash.slice(1)));
 
 function loadMD(path, el, onComplete) {
   fetch(path)

@@ -115,6 +115,8 @@ h4 {
   padding-right: 12px;
   text-decoration: underline transparent;
   transition: text-decoration-color 0.3s;
+  color: inherit;
+  cursor: pointer;
 }
 
 .selectTab:hover {
