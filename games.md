@@ -43,7 +43,7 @@ Web and midi based Guitar Hero/Rockband clone.
 Uses tone.js for audio along with tone.js instruments.  
 Midi files from freemidi.org are processed though MidiConvert.  
 
-Try it out [here](https://github.com/joegaffey/rock-star)!
+Try it out [here](https://joegaffey.com/rock-star/).  See the [source](https://github.com/joegaffey/rock-star)!
 
 ### Invaders from... Space!
 
