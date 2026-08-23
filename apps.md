@@ -2,42 +2,55 @@ These are mostly experiments used to learn a technology or try out a novel UX pa
 
 If you see something useful let me know!
 
+### Synker
+
+A cheerful family calendar and task list PWA that syncs with Google Calendar and Google Tasks. Designed for touch-first kiosk displays with playful, mobile-game-style graphics.
+
+Features: Google Calendar & Tasks sync, configurable auto-sync (default every 5 minutes), touch-first UX with large touch targets, installable offline-ready PWA, and one-command Docker deploy for CasaOS or any Docker host.
+
+Try the live demo [here](https://joegaffey.com/synker/), or check out the [source](https://github.com/joegaffey/synker)!
+
+
 ### 3table
 
 Simplified tabular design for 3D. An experimental CSV based 3D file format and modelling app. 
 
+Each table row is a model part. Parts compose hierarchically into groups, editable in the table or directly in CSV, so anyone who can use a spreadsheet can build 3D models. Includes aluminium profile parts for rig-style constructions, a Bill of Materials to count parts and accessories, and STL export for 3D printing.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/11TeA7der1Q?si=R32EYG0om4uGIJtq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Try it [here](https://3table.glitch.me/)!
+See the [source](https://github.com/joegaffey/3table)!
 
 
 ### MuScLEd
 
 The MUlti-SCreen Layout EDitor provides a 3D workspace to layout and assess the design of your multi-screen envrionment.
 
-![Screenshot](https://cdn.glitch.global/710b4225-853b-4ba5-bd3d-1a005f44407d/muscled.png)
+Place your screens in a 3D scene to preview multi-monitor setups like matched triple displays used in sim racing before you build.
 
-Try it [here](https://muscled.glitch.me/)!
+See the [source](https://github.com/joegaffey/muscled)!
 
 
 ### Phys Ed
 
 Basic 2D physics body editor.  
 
-![Phys-Ed screenshot](https://cdn.glitch.me/22db1ff7-3ea8-4eab-9f25-9ca603a01e31%2Fscreen.png?v=1639257617792)
+Click to place points tracing the outline of your object (an image with a transparent background works best), then preview the collider in the built-in test sandbox and copy the generated JSON straight into your physics app. Output is based on the matter.js physics library.
 
-Try it [here](https://phys-ed.glitch.me/)!
+See the [source](https://github.com/joegaffey/phys-ed)!
 
 
 ### Comical
 
 Comical is a basic comic book creator/viewer Web App.  
 
-See an example [here](https://comical.glitch.me/).  
+Edit your comic data as JSON: set the title, layout and declare your own panels, each with an image URL and optional caption. A grid layout maps panels to the page, and a text view lets you save your comic offline.
+
+See the [source](https://github.com/joegaffey/comical).  
 
 
 ### Dice
 
 Click the die to roll.
 
-Try it [here](https://dice.glitch.me/)!
+See the [source](https://github.com/joegaffey/dice)!
