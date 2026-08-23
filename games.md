@@ -31,8 +31,6 @@ Inspired by top down racers like [Circuit Superstars](https://store.steampowered
 
 Try it out [here](https://joegaffey.com/trackstar/public/).  Use a gamepad, touch (in progress), keyboard arrows or WASD keys to drive. Enjoy!
 
-Also check out the track editor [here](https://github.com/joegaffey/trackstar)!
-
 ### Oids
 
 Space physics experiment - elements of Asteroids and Lunar Lander/Thrust (C64 FTW).  
