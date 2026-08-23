@@ -46,7 +46,7 @@ Comical is a basic comic book creator/viewer Web App.
 
 Edit your comic data as JSON: set the title, layout and declare your own panels, each with an image URL and optional caption. A grid layout maps panels to the page, and a text view lets you save your comic offline.
 
-See the [source](https://github.com/joegaffey/comical).  
+See the [source](https://github.com/joegaffey/comical).  Try it [here](https://joegaffey.com/comical/).
 
 
 ### Dice
