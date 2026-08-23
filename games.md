@@ -7,21 +7,21 @@ If you like something let me know and I might even be inspired to do an update.
 Push your boxes into their zone before the other drivers!  
 Is it a game or an AI playground - you can decide.  
 
-Try it [here](https://joegaffey.github.io/pushy-karts/)!  
+Try it [here](https://joegaffey.github.io/pushy-karts/).  See the [source](https://github.com/joegaffey/pushy-karts).
 
 ### Bug vs Boxes
 
 Keep the boxes off the platform.  
 GitHub [GameOff](https://itch.io/jam/game-off-2021) 2021 entry.
 
-Play [here](https://joegaffey.github.io/bugvsboxes/) or [here](https://joegaffey.itch.io/bugvsboxes)!
+Play [here](https://joegaffey.github.io/bugvsboxes/) or [here](https://joegaffey.itch.io/bugvsboxes)!  See the [source](https://github.com/joegaffey/bugvsboxes).
 
 ### Galaxeroids
 
 Galaxeroids was my entry to the 2017 GitHub [Game Off](https://itch.io/jam/game-off-2017).  
 It was created entirely in-browser using [Glitch](https://glitch.com/) for code and [Piskel](https://www.piskelapp.com/) for graphics.  
 
-You can [play it here](https://joegaffey.github.io/galaxeroids/). 
+You can [play it here](https://joegaffey.github.io/galaxeroids/).  See the [source](https://github.com/joegaffey/galaxeroids).
 
 ### Track Star
 
@@ -29,7 +29,7 @@ Get out on that track and show them what you can do!
 
 Inspired by top down racers like [Circuit Superstars](https://store.steampowered.com/app/1097130/Circuit_Superstars/), [Real World Racing](https://steamcommunity.com/sharedfiles/filedetails/?id=94564971) and [Ultimate Racing 2D](https://store.steampowered.com/app/808080/Ultimate_Racing_2D/), TrackStar is an attempt to create a semi-realistic car racing simulator that runs in the browser so anyone can hop into a virtual car anywhere they have access to an internet connection (or even offline via upcoming PWA support).
 
-Try it out [here](https://joegaffey.com/trackstar/public/).  Use a gamepad, touch (in progress), keyboard arrows or WASD keys to drive. Enjoy!
+Try it out [here](https://joegaffey.com/trackstar/public/).  Use a gamepad, touch (in progress), keyboard arrows or WASD keys to drive. Enjoy!  See the [source](https://github.com/joegaffey/trackstar).
 
 ### Oids
 
