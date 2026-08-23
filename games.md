@@ -51,4 +51,4 @@ I created this game to explore and practice modern JavaScript. The code is mainl
 [Pixi.js](http://www.pixijs.com/) is used for graphics/animation and is the only external dependency. I also used [PWA builder](http://manifoldjs.com/generator) to generate the manifest and service worker for that offline PWA goodness.  
 Originally a [pen](https://codepen.io/joegaffey/pen/KqgGNE), invaders was moved to [GitHub](https://github.com/joegaffey/invaders) when it needed more room to grow.  
 
-Play it [here](https://github.com/joegaffey/invaders)!
+Play it [here](https://joegaffey.com/invaders/).  See the [source](https://github.com/joegaffey/invaders)!
