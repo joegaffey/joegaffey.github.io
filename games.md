@@ -35,7 +35,7 @@ Try it out [here](https://joegaffey.com/trackstar/public/).  Use a gamepad, touc
 
 Space physics experiment - elements of Asteroids and Lunar Lander/Thrust (C64 FTW).  
 
-Try it [here](https://github.com/joegaffey/oids)!
+Try it [here](https://joegaffey.com/oids/)!
 
 ### Rock Star
 
