@@ -19,7 +19,7 @@ Each table row is a model part. Parts compose hierarchically into groups, editab
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/11TeA7der1Q?si=R32EYG0om4uGIJtq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-See the [source](https://github.com/joegaffey/3table)!
+See the [source](https://github.com/joegaffey/3table)!  Try it [here](https://joegaffey.github.io/3table/).
 
 
 ### MuScLEd
@@ -28,7 +28,7 @@ The MUlti-SCreen Layout EDitor provides a 3D workspace to layout and assess the 
 
 Place your screens in a 3D scene to preview multi-monitor setups like matched triple displays used in sim racing before you build.
 
-See the [source](https://github.com/joegaffey/muscled)!
+See the [source](https://github.com/joegaffey/muscled)!  Try it [here](https://joegaffey.github.io/muscled/).
 
 
 ### Phys Ed
@@ -37,7 +37,7 @@ Basic 2D physics body editor.
 
 Click to place points tracing the outline of your object (an image with a transparent background works best), then preview the collider in the built-in test sandbox and copy the generated JSON straight into your physics app. Output is based on the matter.js physics library.
 
-See the [source](https://github.com/joegaffey/phys-ed)!
+See the [source](https://github.com/joegaffey/phys-ed)!  Try it [here](https://joegaffey.github.io/phys-ed/).
 
 
 ### Comical
@@ -53,4 +53,4 @@ See the [source](https://github.com/joegaffey/comical).
 
 Click the die to roll.
 
-See the [source](https://github.com/joegaffey/dice)!
+See the [source](https://github.com/joegaffey/dice)!  Try it [here](https://joegaffey.github.io/dice/).

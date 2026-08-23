@@ -7,7 +7,7 @@ If you like something let me know and I might even be inspired to do an update.
 Push your boxes into their zone before the other drivers!  
 Is it a game or an AI playground - you can decide.  
 
-Try it [here](https://github.com/joegaffey/pushy-karts)!  
+Try it [here](https://joegaffey.github.io/pushy-karts/)!  
 
 ### Bug vs Boxes
 
