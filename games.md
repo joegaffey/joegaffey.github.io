@@ -2,6 +2,12 @@ Find some random games I've authored to various levels of completion here. Get t
 
 If you like something let me know and I might even be inspired to do an update.
 
+### Magnetar
+
+One-axis survival game — catch iron orbs on a rotating magnet before they reach the black hole's core. Manage the weight, spin to shed, and optionally play with a force-feedback wheel via WebHID.
+
+Play it [here](https://joegaffey.com/magnetar/).  See the [source](https://github.com/joegaffey/magnetar).
+
 ### Pushy Karts
 
 Push your boxes into their zone before the other drivers!  
