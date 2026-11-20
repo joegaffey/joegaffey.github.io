@@ -63,13 +63,13 @@ function getMedia(el) {
     const poster = thumbEl ? thumbEl.getAttribute('url') : '';
 
     if(url && (type.startsWith('video/') || mediaEl.getAttribute('medium') === 'video'))
-      return `<video controls playsinline preload="metadata"${poster ? ` poster="${poster}"` : ''}>
+      return `<video class="feedMedia" controls playsinline preload="metadata"${poster ? ` poster="${poster}"` : ''}>
         <source src="${url}" type="${type}">
         <a href="${url}">View video</a>
       </video>`;
 
     if(url && (!type || type.startsWith('image/')))
-      return `<img src="${url}" alt="" loading="lazy">`;
+      return `<img class="feedMedia" src="${url}" alt="" loading="lazy">`;
   }
 
   return getYouTubeEmbed(el);

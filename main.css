@@ -144,23 +144,29 @@ h4 {
   max-width: 100%;
 }
 
-.content video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-top: 8px;
-  border-radius: 12px;
-}
-
+.content .feedMedia,
 .content .videoEmbed {
   display: block;
   width: 100%;
   max-width: 560px;
+  margin-top: 8px;
+  border-radius: 12px;
+}
+
+.content img.feedMedia {
+  max-height: 480px;
+  object-fit: contain;
+}
+
+.content video.feedMedia {
+  height: auto;
+  max-height: 480px;
+}
+
+.content .videoEmbed {
   aspect-ratio: 16 / 9;
   height: auto;
-  margin-top: 8px;
   border: 0;
-  border-radius: 12px;
 }
 
 .noShiftHack {
