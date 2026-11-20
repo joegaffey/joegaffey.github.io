@@ -28,12 +28,14 @@ function showRSS(RSS_URL, onComplete) {
         const link = linkEl.innerHTML;
         const category = categoryEl ? categoryEl.innerHTML : 'Link';
         const description = getDescription(el.querySelector("description").innerHTML);
+        const media = getMedia(el);
 
         html += `
           <article style="--index:${index}">
             <h3>${title} [<a href="${link}">${category}</a>]</h3>
             ${(title == pubDate) ? `` : `<h4>${pubDate}</h4>`}
-            <p>${description}</p>          
+            <p>${description}</p>
+            ${media}
           </article>
         `;
       });
@@ -47,6 +49,44 @@ function showRSS(RSS_URL, onComplete) {
       if(onComplete) 
         onComplete();
     });
+}
+
+function getMedia(el) {
+  const MEDIA_NS = 'http://search.yahoo.com/mrss/';
+  const mediaEl = el.getElementsByTagNameNS(MEDIA_NS, 'content')[0]
+    || el.querySelector('content');
+
+  if(mediaEl) {
+    const url = mediaEl.getAttribute('url');
+    const type = mediaEl.getAttribute('type') || '';
+    const thumbEl = mediaEl.getElementsByTagNameNS(MEDIA_NS, 'thumbnail')[0];
+    const poster = thumbEl ? thumbEl.getAttribute('url') : '';
+
+    if(url && (type.startsWith('video/') || mediaEl.getAttribute('medium') === 'video'))
+      return `<video controls playsinline preload="metadata"${poster ? ` poster="${poster}"` : ''}>
+        <source src="${url}" type="${type}">
+        <a href="${url}">View video</a>
+      </video>`;
+
+    if(url && (!type || type.startsWith('image/')))
+      return `<img src="${url}" alt="" loading="lazy">`;
+  }
+
+  return getYouTubeEmbed(el);
+}
+
+function getYouTubeEmbed(el) {
+  const YOUTUBE_RE = /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([\w-]{11})/;
+  let doc = new DOMParser().parseFromString(el.querySelector("description").innerHTML, "text/html");
+  doc = new DOMParser().parseFromString(doc.documentElement.textContent, "text/html");
+
+  const linkEl = [...doc.querySelectorAll("a")].find(a => YOUTUBE_RE.test(a.href));
+  const match = linkEl && linkEl.href.match(YOUTUBE_RE);
+  if(!match) return '';
+
+  return `<iframe class="videoEmbed" src="https://www.youtube-nocookie.com/embed/${match[1]}"
+    title="YouTube video" loading="lazy" allowfullscreen
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>`;
 }
 
 function getDescription(textIn) {

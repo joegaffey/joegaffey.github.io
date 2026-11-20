@@ -144,6 +144,25 @@ h4 {
   max-width: 100%;
 }
 
+.content video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 8px;
+  border-radius: 12px;
+}
+
+.content .videoEmbed {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 12px;
+}
+
 .noShiftHack {
   height: 5000px;
 }
